@@ -1,8 +1,10 @@
-Members of the group: Ricardo Beltrán Muriel & Javier Benito Abolafio
+Members of the group: Ricardo Beltrán Muriel <ricardobeltrandev@gmail.com>
 
 General Information
 
-  This simple AI project contains:
+Three types of differents Techniques
+
+1º simple AI project contains:
 
   - Random Movement
   - Pattern Movement
@@ -47,3 +49,10 @@ Map Control:
   - Draw Framerate
 
   Note: -1 value means unlimited framerate, 0 is unavailable.
+
+
+2º Voronoi using Fortune's algorithm and Beachline. That implementation gives you the 
+vertices of each cell to create Voronoi diagram. To be able to modify each region.
+
+3º Pathfinding A*, you can choose the type of the distance you want to use to calculate 
+the path
