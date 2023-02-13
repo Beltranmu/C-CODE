@@ -1,0 +1,111 @@
+\hypertarget{system_8h_source}{}\doxysection{system.\+h}
+\label{system_8h_source}\index{include/system.h@{include/system.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_SYSTEM\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_SYSTEM\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <component.h>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16   \textcolor{keyword}{class }Engine;}
+\DoxyCodeLine{17   \textcolor{keyword}{class }DisplayList;}
+\DoxyCodeLine{18   \textcolor{keyword}{struct }EntityHandler;}
+\DoxyCodeLine{19   }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21   \textcolor{keyword}{enum} ComponentState \{}
+\DoxyCodeLine{22     DONT\_CARE = 0,}
+\DoxyCodeLine{23     PRESENT,}
+\DoxyCodeLine{24     MISSING}
+\DoxyCodeLine{25   \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27   \textcolor{keyword}{enum} SystemType \{}
+\DoxyCodeLine{28     RENDER\_SYSTEM = 0,}
+\DoxyCodeLine{29     TRANSFORM\_SYSTEM,}
+\DoxyCodeLine{30     TRANSFORM\_TREE\_SYSTEM,}
+\DoxyCodeLine{31     TRANSFORM\_TREE\_TO\_ECS\_SYSTEM,}
+\DoxyCodeLine{32     MAX}
+\DoxyCodeLine{33   \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     SystemType type;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     ComponentState readComponents[\mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}{Component::MAX}}];}
+\DoxyCodeLine{40     ComponentState writeComponents[\mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}{Component::MAX}}];}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     uint64\_t presentmask;}
+\DoxyCodeLine{43     uint64\_t missingmask;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, \textcolor{keyword}{const} uint32\_t entity) = 0;}
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} begin(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \{\}}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} end(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \{\}}
+\DoxyCodeLine{51     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_system}{\string~System}}() \{\}}
+\DoxyCodeLine{52   }
+\DoxyCodeLine{53     \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_render_system}{RenderSystem}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} \{}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \mbox{\hyperlink{struct_a_w_k_1_1_render_system}{RenderSystem}}();}
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_render_system}{\string~RenderSystem}}();}
+\DoxyCodeLine{59     }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} begin(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, \textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{63     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} end(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}* dl;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67   \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_transform_system}{TransformSystem}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} \{}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \mbox{\hyperlink{struct_a_w_k_1_1_transform_system}{TransformSystem}}();}
+\DoxyCodeLine{72     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_transform_system}{\string~TransformSystem}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} begin(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, \textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{77     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} end(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79   \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_system}{TransformTreeSystem}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} \{}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_system}{TransformTreeSystem}}();}
+\DoxyCodeLine{84     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_system}{\string~TransformTreeSystem}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     uint32\_t numberElements;}
+\DoxyCodeLine{87     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} begin(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{88     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, \textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{89     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} end(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91   \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_to_e_c_s_system}{TransformTreeToECSSystem}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} \{}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_to_e_c_s_system}{TransformTreeToECSSystem}}();}
+\DoxyCodeLine{97     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_transform_tree_to_e_c_s_system}{\string~TransformTreeToECSSystem}}();}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     }
+\DoxyCodeLine{100     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} begin(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{101     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, \textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{102     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} end(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine) \textcolor{keyword}{override};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104   \};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 \};}
+\DoxyCodeLine{108  }
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_SYSTEM\_\_H\_\_}}
+
+\end{DoxyCode}

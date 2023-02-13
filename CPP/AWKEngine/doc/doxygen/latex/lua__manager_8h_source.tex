@@ -1,0 +1,67 @@
+\hypertarget{lua__manager_8h_source}{}\doxysection{lua\+\_\+manager.\+h}
+\label{lua__manager_8h_source}\index{include/lua\_manager.h@{include/lua\_manager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_LUA\_MANAGER\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_LUA\_MANAGER\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}lua.hpp"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}engine.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \textcolor{keyword}{class }GPUState;}
+\DoxyCodeLine{18   \textcolor{keyword}{class }Engine;}
+\DoxyCodeLine{19   \textcolor{keyword}{struct }ECSData;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{LuaBase}} \{}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{LuaBase}}();}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{\string~LuaBase}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{27       lua\_State* L = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29   \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_lua_load_shader}{LuaLoadShader}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{LuaBase}} \{}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{struct_a_w_k_1_1_lua_load_shader}{LuaLoadShader}}(Engine::GPUState* gpuState);}
+\DoxyCodeLine{34     \mbox{\hyperlink{struct_a_w_k_1_1_lua_load_shader}{\string~LuaLoadShader}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     Engine::GPUState* \_GPUState;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keyword}{static} \textcolor{keywordtype}{int} loadShader(lua\_State* L);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40   \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_lua_create_scene}{LuaCreateScene}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{LuaBase}} \{}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \mbox{\hyperlink{struct_a_w_k_1_1_lua_create_scene}{LuaCreateScene}}(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine, ECSData* ECS);}
+\DoxyCodeLine{45     \mbox{\hyperlink{struct_a_w_k_1_1_lua_create_scene}{\string~LuaCreateScene}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}* engine;}
+\DoxyCodeLine{48     ECSData* ECS;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keyword}{static} \textcolor{keywordtype}{int} createEntityL(lua\_State* L);}
+\DoxyCodeLine{51     \textcolor{keyword}{static} \textcolor{keywordtype}{int} setEntityPosition(lua\_State* L);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53   \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55   \textcolor{comment}{// All entities that will update with Lua}}
+\DoxyCodeLine{56   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_lua_component}{LuaComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_lua_base}{LuaBase}} \{}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \mbox{\hyperlink{struct_a_w_k_1_1_lua_component}{LuaComponent}}();}
+\DoxyCodeLine{59     \mbox{\hyperlink{struct_a_w_k_1_1_lua_component}{\string~LuaComponent}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{static} \textcolor{keywordtype}{int} move(lua\_State* L);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63   \};}
+\DoxyCodeLine{64  }
+\DoxyCodeLine{65 \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_LUA\_MANAGER\_H\_\_}}
+
+\end{DoxyCode}

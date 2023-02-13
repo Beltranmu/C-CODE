@@ -1,0 +1,67 @@
+\hypertarget{struct_a_w_k_1_1_node_component}{}\doxysection{AWK\+::Node\+Component Struct Reference}
+\label{struct_a_w_k_1_1_node_component}\index{AWK::NodeComponent@{AWK::NodeComponent}}
+
+
+\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{Node\+Component}} Struct.  
+
+
+
+
+{\ttfamily \#include $<$component.\+h$>$}
+
+Inheritance diagram for AWK\+::Node\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_a_w_k_1_1_node_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a94fc05b287f7a9b8a2d6249cd0bc0a9d}{parent}} = -\/1
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a49caa7e16e16722fc8bae03ca6dba756}{lvl}} = 0
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_aaec1cc1a6b71f0a358e077138d757929}{index}} = 0
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a203b08ee0bc0da3a90837aaf2fc27b4e}{indexparent}} = -\/1
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{Node\+Component}} Struct. 
+
+\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{Node\+Component}} store the information needed to represent the scene as a tree in an hierarchical way. ~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_a_w_k_1_1_node_component_aaec1cc1a6b71f0a358e077138d757929}\label{struct_a_w_k_1_1_node_component_aaec1cc1a6b71f0a358e077138d757929}} 
+\index{AWK::NodeComponent@{AWK::NodeComponent}!index@{index}}
+\index{index@{index}!AWK::NodeComponent@{AWK::NodeComponent}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily uint32\+\_\+t AWK\+::\+Node\+Component\+::index = 0}
+
+Index inside the level of the hierarchy of the node. \mbox{\Hypertarget{struct_a_w_k_1_1_node_component_a203b08ee0bc0da3a90837aaf2fc27b4e}\label{struct_a_w_k_1_1_node_component_a203b08ee0bc0da3a90837aaf2fc27b4e}} 
+\index{AWK::NodeComponent@{AWK::NodeComponent}!indexparent@{indexparent}}
+\index{indexparent@{indexparent}!AWK::NodeComponent@{AWK::NodeComponent}}
+\doxysubsubsection{\texorpdfstring{indexparent}{indexparent}}
+{\footnotesize\ttfamily int32\+\_\+t AWK\+::\+Node\+Component\+::indexparent = -\/1}
+
+Index inside the parent level of the hierarchy of the parent node. -\/1 if the entity does not have a parent. \mbox{\Hypertarget{struct_a_w_k_1_1_node_component_a49caa7e16e16722fc8bae03ca6dba756}\label{struct_a_w_k_1_1_node_component_a49caa7e16e16722fc8bae03ca6dba756}} 
+\index{AWK::NodeComponent@{AWK::NodeComponent}!lvl@{lvl}}
+\index{lvl@{lvl}!AWK::NodeComponent@{AWK::NodeComponent}}
+\doxysubsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily uint32\+\_\+t AWK\+::\+Node\+Component\+::lvl = 0}
+
+level in the hierarchy of the transform tree. LvL 0 for the ones without parent. \mbox{\Hypertarget{struct_a_w_k_1_1_node_component_a94fc05b287f7a9b8a2d6249cd0bc0a9d}\label{struct_a_w_k_1_1_node_component_a94fc05b287f7a9b8a2d6249cd0bc0a9d}} 
+\index{AWK::NodeComponent@{AWK::NodeComponent}!parent@{parent}}
+\index{parent@{parent}!AWK::NodeComponent@{AWK::NodeComponent}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily int32\+\_\+t AWK\+::\+Node\+Component\+::parent = -\/1}
+
+Index of the parent in the vector of entities of the engine-\/1 if the entity does not have a parent. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/component.\+h\end{DoxyCompactItemize}

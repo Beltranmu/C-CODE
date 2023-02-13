@@ -1,0 +1,67 @@
+\hypertarget{material_8h_source}{}\doxysection{material.\+h}
+\label{material_8h_source}\index{include/material.h@{include/material.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_MATERIAL\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_MATERIAL\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material}{Material}}}
+\DoxyCodeLine{15   \{}
+\DoxyCodeLine{16     }
+\DoxyCodeLine{17       \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{RGBA}} \{}
+\DoxyCodeLine{18         \textcolor{keywordtype}{float} r, g, b, a;}
+\DoxyCodeLine{19       \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21       \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters}{MaterialParameters}} \{}
+\DoxyCodeLine{22         \textcolor{keyword}{enum} MaterialType \{}
+\DoxyCodeLine{23           MaterialType\_None = -\/1,}
+\DoxyCodeLine{24           MaterialType\_SolidColor = 0,}
+\DoxyCodeLine{25           MaterialType\_TextureColor,}
+\DoxyCodeLine{26           MaterialType\_PBR }
+\DoxyCodeLine{27           \textcolor{comment}{// etc...}}
+\DoxyCodeLine{28         \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_solid_color}{SolidColor}} \{}
+\DoxyCodeLine{31           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{RGBA}} color;}
+\DoxyCodeLine{32         \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_texture_color}{TextureColor}} \{}
+\DoxyCodeLine{35           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{RGBA}} color;}
+\DoxyCodeLine{36           uint32\_t texture[8];}
+\DoxyCodeLine{37           \textcolor{comment}{//Activate}}
+\DoxyCodeLine{38           \textcolor{comment}{//Hacer el bind de la textura}}
+\DoxyCodeLine{39         \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_p_b_r}{PBR}} \{}
+\DoxyCodeLine{42           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{RGBA}} BaseColor;}
+\DoxyCodeLine{43           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{RGBA}} emissive;}
+\DoxyCodeLine{44           \textcolor{keywordtype}{float} metallic;}
+\DoxyCodeLine{45           \textcolor{keywordtype}{float} roughness;}
+\DoxyCodeLine{46           \textcolor{keywordtype}{float} reflectance;}
+\DoxyCodeLine{47           \textcolor{keywordtype}{float} ambientOcclussion;}
+\DoxyCodeLine{48         \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \textcolor{keyword}{union }\mbox{\hyperlink{union_a_w_k_1_1_material_1_1_material_parameters_1_1_data}{Data}} \{}
+\DoxyCodeLine{51           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_solid_color}{SolidColor}} solidColor;}
+\DoxyCodeLine{52           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_texture_color}{TextureColor}} textureColor;}
+\DoxyCodeLine{53           \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters_1_1_p_b_r}{PBR}} pbr;}
+\DoxyCodeLine{54         \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         MaterialType type;}
+\DoxyCodeLine{57         \mbox{\hyperlink{union_a_w_k_1_1_material_1_1_material_parameters_1_1_data}{Data}} data;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59       \};}
+\DoxyCodeLine{60     }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64  }
+\DoxyCodeLine{65 \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_MATERIAL\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  textureexample.cc
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\src\textureexample.cc(600): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\src\textureexample.cc(602): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  EDK_workspace.vcxproj -> D:\ricardo\segundo\grafica\2pg_ta_beltranmu\EDK_workspace_projectmanhattan\project\VS2017\EDK_workspace\..\..\..\bin\EDK_workspace.exe

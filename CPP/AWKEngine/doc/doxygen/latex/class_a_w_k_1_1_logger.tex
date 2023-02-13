@@ -1,0 +1,35 @@
+\hypertarget{class_a_w_k_1_1_logger}{}\doxysection{AWK\+::Logger Class Reference}
+\label{class_a_w_k_1_1_logger}\index{AWK::Logger@{AWK::Logger}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_logger_a9bd5becfa969da9d768c2b8c91ed556b}\label{class_a_w_k_1_1_logger_a9bd5becfa969da9d768c2b8c91ed556b}} 
+enum {\bfseries enum\+Error\+Code} \{ \newline
+{\bfseries k\+Error\+Type\+\_\+\+OK} = 0
+, {\bfseries k\+Error\+Type\+\_\+\+Window\+\_\+\+Size\+\_\+\+Error} = 1
+, {\bfseries k\+Error\+Type\+\_\+\+Window\+\_\+\+Init\+\_\+\+Error} = 2
+, {\bfseries k\+Error\+Type\+\_\+\+Window\+\_\+\+Create\+\_\+\+Error} = 3
+, \newline
+{\bfseries k\+Error\+Type\+\_\+\+Error\+Loading\+GLAD} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_logger_a1425712b5db29577cd0d116e05b812b9}\label{class_a_w_k_1_1_logger_a1425712b5db29577cd0d116e05b812b9}} 
+void {\bfseries init\+Logger} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_logger_aa3ef2291eacca857c055231202a86960}\label{class_a_w_k_1_1_logger_aa3ef2291eacca857c055231202a86960}} 
+void {\bfseries log} (loguru\+::\+Named\+Verbosity, const char $\ast$file, unsigned line, enum\+Error\+Code error\+\_\+code)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_logger_a35c6dfd992988e37701477b9dbe13d16}\label{class_a_w_k_1_1_logger_a35c6dfd992988e37701477b9dbe13d16}} 
+void {\bfseries log} (loguru\+::\+Named\+Verbosity, const char $\ast$file, unsigned line, const char $\ast$error\+\_\+code)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_logger_a409e8f261af9ebfe43b2401b5c03e20a}\label{class_a_w_k_1_1_logger_a409e8f261af9ebfe43b2401b5c03e20a}} 
+void {\bfseries log\+To\+File} (const char $\ast$path, loguru\+::\+File\+Mode mode, loguru\+::\+Verbosity verbosity)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/logger.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{class_a_w_k_1_1_sound_manager}{}\doxysection{AWK\+::Sound\+Manager Class Reference}
+\label{class_a_w_k_1_1_sound_manager}\index{AWK::SoundManager@{AWK::SoundManager}}
+
+
+\mbox{\hyperlink{class_a_w_k_1_1_sound_manager}{Sound\+Manager}} class.  
+
+
+
+
+{\ttfamily \#include $<$sound\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} class. To do the layering effect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a83b944928ca8647907a9ede17db466fd}\label{class_a_w_k_1_1_sound_manager_a83b944928ca8647907a9ede17db466fd}} 
+void {\bfseries init} ()
+\begin{DoxyCompactList}\small\item\em init the soundmanager \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a6e45748a2a83054b4bff43c705120881}{load\+Sound}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em load a new sound \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a5227202c7f3655633399a79e4dca2e62}\label{class_a_w_k_1_1_sound_manager_a5227202c7f3655633399a79e4dca2e62}} 
+void {\bfseries play} ()
+\begin{DoxyCompactList}\small\item\em play the sound 0 in the channel 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a710216c79d722f933398bdf33fd81792}{update}} (float time)
+\begin{DoxyCompactList}\small\item\em function update to have a control of the sound effects \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_aa2a5d62d8e373b4c47d90bfb7e05cb32}\label{class_a_w_k_1_1_sound_manager_aa2a5d62d8e373b4c47d90bfb7e05cb32}} 
+void {\bfseries music\+Input} ()
+\begin{DoxyCompactList}\small\item\em function where the input for the sound effect are caught \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_afa4a8249dd81a663dd40f29be45fd975}{Reset\+Mode}} (int previous\+\_\+mode, int next\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em Make the necessary changes to change between the different modes of the demo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a995641b27625b9f8fb68cac27edebf22}{crossfading}} (int32\+\_\+t id\+\_\+fade\+\_\+in, int32\+\_\+t id\+\_\+fade\+\_\+out, float time=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Activate the crossfading between two sounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a02d005d8d57caf5d676b7b323410f3d3}\label{class_a_w_k_1_1_sound_manager_a02d005d8d57caf5d676b7b323410f3d3}} 
+void {\bfseries free\+SM} ()
+\begin{DoxyCompactList}\small\item\em free all the resources \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a2460285783c54e4128c83c5b8e4dd8cb}{play\+Layer}} (\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L)
+\begin{DoxyCompactList}\small\item\em Play the layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a49cf671249eb508fcf8a5af8d16c2de4}{activate\+Layer}} (\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\+\_\+t id\+\_\+chanel)
+\begin{DoxyCompactList}\small\item\em Activate a channel of the layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_aaff55c4f8a032839c730e72a4191709d}{desactivate\+Layer}} (\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\+\_\+t id\+\_\+chanel)
+\begin{DoxyCompactList}\small\item\em Deactivate a channel of the layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a735c7f6f9068c22997a09de7cb0a1e48}{toggle\+Layer}} (\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\+\_\+t id\+\_\+chanel)
+\begin{DoxyCompactList}\small\item\em Toggle the state of a channel of the layer. If it is activate -\/\texorpdfstring{$>$}{>} deactivate , deactivate -\/\texorpdfstring{$>$}{>} activate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a422792a39ee9f74ddb860e2af9cdc2e8}{init\+Branching}} (int32\+\_\+t n\+\_\+nodes)
+\begin{DoxyCompactList}\small\item\em initiate the branching of a size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_ae7e0ec6a0ef79d0b213301f6d2c70137}{play\+Brach}} (int32\+\_\+t starting\+\_\+id)
+\begin{DoxyCompactList}\small\item\em play the branching \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a7e9bcf98140c74bb5882a7f131112f81}{change\+Brach}} (int32\+\_\+t new\+\_\+stage, int32\+\_\+t transition)
+\begin{DoxyCompactList}\small\item\em change the values for the next branch \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a4fb6c9abe0ccabd005e33c27c02418af}{Piano}} (int32\+\_\+t note)
+\begin{DoxyCompactList}\small\item\em Play a sinusoidal sound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_adb63530d288700fff153fdd8188bc60a}\label{class_a_w_k_1_1_sound_manager_adb63530d288700fff153fdd8188bc60a}} 
+int32\+\_\+t {\bfseries mode}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a9ab1bebd6a670f117b684b74b34ac5a3}\label{class_a_w_k_1_1_sound_manager_a9ab1bebd6a670f117b684b74b34ac5a3}} 
+int {\bfseries sound\+\_\+id} \mbox{[}3\mbox{]} = \{ 2,3,4 \}
+\begin{DoxyCompactList}\small\item\em the id of the sounds for the layering \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a644626ff2aebe733be56d1c276775742}\label{class_a_w_k_1_1_sound_manager_a644626ff2aebe733be56d1c276775742}} 
+\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} {\bfseries layer\+\_\+1}
+\begin{DoxyCompactList}\small\item\em the layering effect \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a4711fac2722842320a30f63939aae497}\label{class_a_w_k_1_1_sound_manager_a4711fac2722842320a30f63939aae497}} 
+Vector {\bfseries branching\+\_\+1}
+\begin{DoxyCompactList}\small\item\em vector with all the nodes of the branching \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_a_w_k_1_1_sound_manager}{Sound\+Manager}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a49cf671249eb508fcf8a5af8d16c2de4}\label{class_a_w_k_1_1_sound_manager_a49cf671249eb508fcf8a5af8d16c2de4}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!activateLayer@{activateLayer}}
+\index{activateLayer@{activateLayer}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{activateLayer()}{activateLayer()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::activate\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&}]{L,  }\item[{int32\+\_\+t}]{id\+\_\+chanel }\end{DoxyParamCaption})}
+
+
+
+Activate a channel of the layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}} & \&L, the layer you want to activate a channel \\
+\hline
+{\em int32\+\_\+t} & id\+\_\+chanel, the id of the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a7e9bcf98140c74bb5882a7f131112f81}\label{class_a_w_k_1_1_sound_manager_a7e9bcf98140c74bb5882a7f131112f81}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!changeBrach@{changeBrach}}
+\index{changeBrach@{changeBrach}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{changeBrach()}{changeBrach()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::change\+Brach (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{new\+\_\+stage,  }\item[{int32\+\_\+t}]{transition }\end{DoxyParamCaption})}
+
+
+
+change the values for the next branch 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int32\+\_\+t} & new\+\_\+stage, the next node \\
+\hline
+{\em int32\+\_\+t} & transition, if the next node has transition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a995641b27625b9f8fb68cac27edebf22}\label{class_a_w_k_1_1_sound_manager_a995641b27625b9f8fb68cac27edebf22}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!crossfading@{crossfading}}
+\index{crossfading@{crossfading}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{crossfading()}{crossfading()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::crossfading (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{id\+\_\+fade\+\_\+in,  }\item[{int32\+\_\+t}]{id\+\_\+fade\+\_\+out,  }\item[{float}]{time = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+
+
+Activate the crossfading between two sounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int32\+\_\+t} & id\+\_\+fade\+\_\+in, the id of the sound that is going to start playing and increase its volume \\
+\hline
+{\em int32\+\_\+t} & id\+\_\+fade\+\_\+out, the id of the sound that is going decrease its volume and stop playing \\
+\hline
+{\em float} & time = 1.\+0f, the transition time, default 1 sec \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_aaff55c4f8a032839c730e72a4191709d}\label{class_a_w_k_1_1_sound_manager_aaff55c4f8a032839c730e72a4191709d}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!desactivateLayer@{desactivateLayer}}
+\index{desactivateLayer@{desactivateLayer}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{desactivateLayer()}{desactivateLayer()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::desactivate\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&}]{L,  }\item[{int32\+\_\+t}]{id\+\_\+chanel }\end{DoxyParamCaption})}
+
+
+
+Deactivate a channel of the layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}} & \&L, the layer you want to deactivate a channel \\
+\hline
+{\em int32\+\_\+t} & id\+\_\+chanel, the id of the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a422792a39ee9f74ddb860e2af9cdc2e8}\label{class_a_w_k_1_1_sound_manager_a422792a39ee9f74ddb860e2af9cdc2e8}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!initBranching@{initBranching}}
+\index{initBranching@{initBranching}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{initBranching()}{initBranching()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::init\+Branching (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{n\+\_\+nodes }\end{DoxyParamCaption})}
+
+
+
+initiate the branching of a size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int32\+\_\+t} & n\+\_\+nodes, the number of nodes that the branching will have \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a6e45748a2a83054b4bff43c705120881}\label{class_a_w_k_1_1_sound_manager_a6e45748a2a83054b4bff43c705120881}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!loadSound@{loadSound}}
+\index{loadSound@{loadSound}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{loadSound()}{loadSound()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::load\+Sound (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+load a new sound 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ path, the path of the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a4fb6c9abe0ccabd005e33c27c02418af}\label{class_a_w_k_1_1_sound_manager_a4fb6c9abe0ccabd005e33c27c02418af}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!Piano@{Piano}}
+\index{Piano@{Piano}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{Piano()}{Piano()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::\+Piano (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{note }\end{DoxyParamCaption})}
+
+
+
+Play a sinusoidal sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int32\+\_\+t} & note, the note to play (DO, RE etc) \\
+\hline
+{\em int32\+\_\+t} & transition, if the next node has transition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_ae7e0ec6a0ef79d0b213301f6d2c70137}\label{class_a_w_k_1_1_sound_manager_ae7e0ec6a0ef79d0b213301f6d2c70137}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!playBrach@{playBrach}}
+\index{playBrach@{playBrach}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{playBrach()}{playBrach()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::play\+Brach (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{starting\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+play the branching 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int32\+\_\+t} & starting\+\_\+id, the starting node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a2460285783c54e4128c83c5b8e4dd8cb}\label{class_a_w_k_1_1_sound_manager_a2460285783c54e4128c83c5b8e4dd8cb}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!playLayer@{playLayer}}
+\index{playLayer@{playLayer}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{playLayer()}{playLayer()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::play\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&}]{L }\end{DoxyParamCaption})}
+
+
+
+Play the layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}} & \&L, the layer to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_afa4a8249dd81a663dd40f29be45fd975}\label{class_a_w_k_1_1_sound_manager_afa4a8249dd81a663dd40f29be45fd975}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!ResetMode@{ResetMode}}
+\index{ResetMode@{ResetMode}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{ResetMode()}{ResetMode()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::\+Reset\+Mode (\begin{DoxyParamCaption}\item[{int}]{previous\+\_\+mode,  }\item[{int}]{next\+\_\+mode }\end{DoxyParamCaption})}
+
+
+
+Make the necessary changes to change between the different modes of the demo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & previous\+\_\+mode, the id of the current mode \\
+\hline
+{\em int} & next\+\_\+mode, the id of the mode your are going to change into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a735c7f6f9068c22997a09de7cb0a1e48}\label{class_a_w_k_1_1_sound_manager_a735c7f6f9068c22997a09de7cb0a1e48}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!toggleLayer@{toggleLayer}}
+\index{toggleLayer@{toggleLayer}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{toggleLayer()}{toggleLayer()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::toggle\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&}]{L,  }\item[{int32\+\_\+t}]{id\+\_\+chanel }\end{DoxyParamCaption})}
+
+
+
+Toggle the state of a channel of the layer. If it is activate -\/\texorpdfstring{$>$}{>} deactivate , deactivate -\/\texorpdfstring{$>$}{>} activate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}} & \&L, the layer you want to toggle a channel \\
+\hline
+{\em int32\+\_\+t} & id\+\_\+chanel, the id of the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_w_k_1_1_sound_manager_a710216c79d722f933398bdf33fd81792}\label{class_a_w_k_1_1_sound_manager_a710216c79d722f933398bdf33fd81792}} 
+\index{AWK::SoundManager@{AWK::SoundManager}!update@{update}}
+\index{update@{update}!AWK::SoundManager@{AWK::SoundManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void AWK\+::\+Sound\+Manager\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+function update to have a control of the sound effects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & time, delta time of each loop \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/sound\+\_\+manager.\+h\end{DoxyCompactItemize}

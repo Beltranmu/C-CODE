@@ -1,0 +1,73 @@
+\hypertarget{class_menu_scene}{}\doxysection{Menu\+Scene Class Reference}
+\label{class_menu_scene}\index{MenuScene@{MenuScene}}
+Inheritance diagram for Menu\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_scene_aacc1d8a869c848f6933a6dae605dc93c}\label{class_menu_scene_aacc1d8a869c848f6933a6dae605dc93c}} 
+void \mbox{\hyperlink{class_menu_scene_aacc1d8a869c848f6933a6dae605dc93c}{init}} () override
+\begin{DoxyCompactList}\small\item\em init the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_scene_a2c7cfe997946ed07781cd89c0523f5f9}{input}} (S\+D\+L\+\_\+\+Event $\ast$eve) override
+\begin{DoxyCompactList}\small\item\em Contains the input of each scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_scene_a3f8c1a2a91f22dcb9202567f1ac59e96}\label{class_menu_scene_a3f8c1a2a91f22dcb9202567f1ac59e96}} 
+void \mbox{\hyperlink{class_menu_scene_a3f8c1a2a91f22dcb9202567f1ac59e96}{update}} () override
+\begin{DoxyCompactList}\small\item\em Contains the update fuctions of each scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_scene_acc9acc1b709b9b1d0c47056efd2f4640}{draw\+Imgui}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em use to draw extra informatio that is not child of entity (Imgui). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_scene_a6188d2306043e5c7ade1878738499c4e}\label{class_menu_scene_a6188d2306043e5c7ade1878738499c4e}} 
+\mbox{\hyperlink{class_label}{Label}} {\bfseries menu\+\_\+text\+\_\+} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_scene_acc9acc1b709b9b1d0c47056efd2f4640}\label{class_menu_scene_acc9acc1b709b9b1d0c47056efd2f4640}} 
+\index{MenuScene@{MenuScene}!drawImgui@{drawImgui}}
+\index{drawImgui@{drawImgui}!MenuScene@{MenuScene}}
+\doxysubsubsection{\texorpdfstring{drawImgui()}{drawImgui()}}
+{\footnotesize\ttfamily void Menu\+Scene\+::draw\+Imgui (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+use to draw extra informatio that is not child of entity (Imgui). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rendeder$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_aff2cd67a82745747f3ee9ebde7838c71}{Scene}}.
+
+\mbox{\Hypertarget{class_menu_scene_a2c7cfe997946ed07781cd89c0523f5f9}\label{class_menu_scene_a2c7cfe997946ed07781cd89c0523f5f9}} 
+\index{MenuScene@{MenuScene}!input@{input}}
+\index{input@{input}!MenuScene@{MenuScene}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Menu\+Scene\+::input (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{eve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contains the input of each scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & eve. Event of S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}{Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/menuscene.\+h\end{DoxyCompactItemize}

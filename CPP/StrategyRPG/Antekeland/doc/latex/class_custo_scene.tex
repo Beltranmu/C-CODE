@@ -1,0 +1,68 @@
+\hypertarget{class_custo_scene}{}\doxysection{Custo\+Scene Class Reference}
+\label{class_custo_scene}\index{CustoScene@{CustoScene}}
+Inheritance diagram for Custo\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_custo_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_custo_scene_afebe07e06191c425745c6712c90465d4}\label{class_custo_scene_afebe07e06191c425745c6712c90465d4}} 
+void \mbox{\hyperlink{class_custo_scene_afebe07e06191c425745c6712c90465d4}{init}} () override
+\begin{DoxyCompactList}\small\item\em init the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custo_scene_a0fc0ead99789b3d65ea39a457453e06b}{input}} (S\+D\+L\+\_\+\+Event $\ast$eve) override
+\begin{DoxyCompactList}\small\item\em Contains the input of each scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_custo_scene_a00a87b279a3dce9109f992ad4662a2ba}\label{class_custo_scene_a00a87b279a3dce9109f992ad4662a2ba}} 
+void \mbox{\hyperlink{class_custo_scene_a00a87b279a3dce9109f992ad4662a2ba}{update}} () override
+\begin{DoxyCompactList}\small\item\em Contains the update fuctions of each scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_custo_scene_aa777ed583cd1ebff20d6e5e326ed77c8}{draw\+Imgui}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em use to draw extra informatio that is not child of entity (Imgui). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_custo_scene_aa777ed583cd1ebff20d6e5e326ed77c8}\label{class_custo_scene_aa777ed583cd1ebff20d6e5e326ed77c8}} 
+\index{CustoScene@{CustoScene}!drawImgui@{drawImgui}}
+\index{drawImgui@{drawImgui}!CustoScene@{CustoScene}}
+\doxysubsubsection{\texorpdfstring{drawImgui()}{drawImgui()}}
+{\footnotesize\ttfamily void Custo\+Scene\+::draw\+Imgui (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+use to draw extra informatio that is not child of entity (Imgui). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rendeder$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_aff2cd67a82745747f3ee9ebde7838c71}{Scene}}.
+
+\mbox{\Hypertarget{class_custo_scene_a0fc0ead99789b3d65ea39a457453e06b}\label{class_custo_scene_a0fc0ead99789b3d65ea39a457453e06b}} 
+\index{CustoScene@{CustoScene}!input@{input}}
+\index{input@{input}!CustoScene@{CustoScene}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Custo\+Scene\+::input (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{eve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contains the input of each scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & eve. Event of S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}{Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/custoscene.\+h\end{DoxyCompactItemize}

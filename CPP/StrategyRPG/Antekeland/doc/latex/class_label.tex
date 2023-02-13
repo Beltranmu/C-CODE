@@ -1,0 +1,174 @@
+\hypertarget{class_label}{}\doxysection{Label Class Reference}
+\label{class_label}\index{Label@{Label}}
+Inheritance diagram for Label\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_label}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_label_a7cc1efcf72468c7abfbfdf5bfc8f3159}{init}} (const char $\ast$font\+\_\+path, uint16\+\_\+t size, const S\+D\+L\+\_\+\+Color c, const char $\ast$t, const S\+D\+L\+\_\+\+Rect r)
+\begin{DoxyCompactList}\small\item\em init the text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a105af5f3e5e1a8e6ae44139235d9e089}{init\+Font}} (const char $\ast$font\+\_\+path, const uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em init the font of the text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a63d381baf034c2a817c14133e933e72f}{change\+Text}} (const char $\ast$t)
+\begin{DoxyCompactList}\small\item\em change the mensage of the text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a930f49b1dcbd5da580ccc0cbb58fafe1}{set\+Position}} (const S\+D\+L\+\_\+\+Rect $\ast$r)
+\begin{DoxyCompactList}\small\item\em change the position of the text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a0e16bb56680fe08014e40bbed13233f5}{init\+Rect}} (const int x, const int y, const int w, const int h)
+\begin{DoxyCompactList}\small\item\em init the position and the size of the box where the text is going to be \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a57e0fd15e750df0cd6163b98a9df1551}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$render) override
+\begin{DoxyCompactList}\small\item\em Draw the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_label_a8f6cf7015bddee3b3fe0840eb177f33d}{change\+Color}} (const S\+D\+L\+\_\+\+Color c)
+\begin{DoxyCompactList}\small\item\em Change the color of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_label_aa1a482b1d57e970dfa3c189772d619f8}\label{class_label_aa1a482b1d57e970dfa3c189772d619f8}} 
+char $\ast$ {\bfseries text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_label_a49397d19246587a6ee2939e36c5d5b82}\label{class_label_a49397d19246587a6ee2939e36c5d5b82}} 
+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries font\+\_\+}
+\item 
+\mbox{\Hypertarget{class_label_a44e09b9d5fa1d8da2a3cbf00c3d6c071}\label{class_label_a44e09b9d5fa1d8da2a3cbf00c3d6c071}} 
+S\+D\+L\+\_\+\+Color {\bfseries color\+\_\+}
+\item 
+\mbox{\Hypertarget{class_label_a96671c18a6abb9ef5e862ec3607d6f30}\label{class_label_a96671c18a6abb9ef5e862ec3607d6f30}} 
+uint16\+\_\+t {\bfseries size\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_label_a8f6cf7015bddee3b3fe0840eb177f33d}\label{class_label_a8f6cf7015bddee3b3fe0840eb177f33d}} 
+\index{Label@{Label}!changeColor@{changeColor}}
+\index{changeColor@{changeColor}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{changeColor()}{changeColor()}}
+{\footnotesize\ttfamily void Label\+::change\+Color (\begin{DoxyParamCaption}\item[{const S\+D\+L\+\_\+\+Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Change the color of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+D\+L\+\_\+\+Color c. the new color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a63d381baf034c2a817c14133e933e72f}\label{class_label_a63d381baf034c2a817c14133e933e72f}} 
+\index{Label@{Label}!changeText@{changeText}}
+\index{changeText@{changeText}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{changeText()}{changeText()}}
+{\footnotesize\ttfamily void Label\+::change\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+change the mensage of the text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ t, the mensage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a57e0fd15e750df0cd6163b98a9df1551}\label{class_label_a57e0fd15e750df0cd6163b98a9df1551}} 
+\index{Label@{Label}!draw@{draw}}
+\index{draw@{draw}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Label\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & render. S\+DL renderer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_entity_a8960e2678dfcdeb720f08103bff49e07}{Entity}}.
+
+\mbox{\Hypertarget{class_label_a7cc1efcf72468c7abfbfdf5bfc8f3159}\label{class_label_a7cc1efcf72468c7abfbfdf5bfc8f3159}} 
+\index{Label@{Label}!init@{init}}
+\index{init@{init}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Label\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font\+\_\+path,  }\item[{uint16\+\_\+t}]{size,  }\item[{const S\+D\+L\+\_\+\+Color}]{c,  }\item[{const char $\ast$}]{t,  }\item[{const S\+D\+L\+\_\+\+Rect}]{r }\end{DoxyParamCaption})}
+
+
+
+init the text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ font\+\_\+path, the path of the font \\
+\hline
+{\em uint16\+\_\+t} & size. the size of the new text \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Color c, the color of the text \\
+\hline
+{\em const} & char$\ast$ t, the mensage \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Rect r, Where you want to put the text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a105af5f3e5e1a8e6ae44139235d9e089}\label{class_label_a105af5f3e5e1a8e6ae44139235d9e089}} 
+\index{Label@{Label}!initFont@{initFont}}
+\index{initFont@{initFont}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{initFont()}{initFont()}}
+{\footnotesize\ttfamily void Label\+::init\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font\+\_\+path,  }\item[{const uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+init the font of the text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ font\+\_\+path, the path of the font \\
+\hline
+{\em uint16\+\_\+t} & size. the size of the new text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a0e16bb56680fe08014e40bbed13233f5}\label{class_label_a0e16bb56680fe08014e40bbed13233f5}} 
+\index{Label@{Label}!initRect@{initRect}}
+\index{initRect@{initRect}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{initRect()}{initRect()}}
+{\footnotesize\ttfamily void Label\+::init\+Rect (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const int}]{w,  }\item[{const int}]{h }\end{DoxyParamCaption})}
+
+
+
+init the position and the size of the box where the text is going to be 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int x, position x \\
+\hline
+{\em const} & int y, position y \\
+\hline
+{\em const} & int w, width \\
+\hline
+{\em const} & int h, height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a930f49b1dcbd5da580ccc0cbb58fafe1}\label{class_label_a930f49b1dcbd5da580ccc0cbb58fafe1}} 
+\index{Label@{Label}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Label@{Label}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Label\+::set\+Position (\begin{DoxyParamCaption}\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+change the position of the text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+D\+L\+\_\+\+Rect r, Where you want to put the text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/label.\+h\end{DoxyCompactItemize}

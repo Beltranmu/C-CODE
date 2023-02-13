@@ -1,0 +1,37 @@
+\hypertarget{transformtree_8h_source}{}\doxysection{transformtree.\+h}
+\label{transformtree_8h_source}\index{include/transformtree.h@{include/transformtree.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_TRASNFORMTREE\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_TRASNFORMTREE\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <glm.hpp>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_t_t_component}{TTComponent}} \{}
+\DoxyCodeLine{19     glm::mat4 localMatrix;}
+\DoxyCodeLine{20     glm::mat4 wolrdMatrix;}
+\DoxyCodeLine{21     int32\_t indexParent; \textcolor{comment}{//-\/1 if they don't have parent}}
+\DoxyCodeLine{22   \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_lvl_structure}{LvlStructure}} \{}
+\DoxyCodeLine{25     uint32\_t numberOfEntities;}
+\DoxyCodeLine{26     int32\_t entityStart;}
+\DoxyCodeLine{27     int32\_t parentStart;}
+\DoxyCodeLine{28   \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_transform_tree}{TransformTree}} \{}
+\DoxyCodeLine{31     std::vector<LvlStructure> numberEntitiesLvL;}
+\DoxyCodeLine{32     std::vector<TTComponent> AAA;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34   \};}
+\DoxyCodeLine{35 \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_TRASNFORMTREE\_H\_\_}}
+
+\end{DoxyCode}

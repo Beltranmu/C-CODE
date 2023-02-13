@@ -1,0 +1,133 @@
+\hypertarget{class_a_w_k_1_1_engine}{}\doxysection{AWK\+::Engine Class Reference}
+\label{class_a_w_k_1_1_engine}\index{AWK::Engine@{AWK::Engine}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_w_k_1_1_engine_1_1_camara}{Camara}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_adbc4225e1e0c013ef6b122d7a58a408e}\label{class_a_w_k_1_1_engine_adbc4225e1e0c013ef6b122d7a58a408e}} 
+uint32\+\_\+t {\bfseries load\+Obj} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_aab7631b7567da18621bce7dec91c0e7d}\label{class_a_w_k_1_1_engine_aab7631b7567da18621bce7dec91c0e7d}} 
+uint32\+\_\+t {\bfseries create\+Texture} (const char $\ast$path)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a79d6895dacfb0fd802d436826d99af86}\label{class_a_w_k_1_1_engine_a79d6895dacfb0fd802d436826d99af86}} 
+uint32\+\_\+t {\bfseries create\+Geometry} (float $\ast$vertex\+\_\+attrib, uint32\+\_\+t $\ast$vertex\+\_\+indices, uint32\+\_\+t size\+\_\+geometry)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a6d8fdf10837f2e3bb7bef3779f269496}\label{class_a_w_k_1_1_engine_a6d8fdf10837f2e3bb7bef3779f269496}} 
+void {\bfseries init} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ae4d0a3f3cc5600f599b2344ae1354b47}\label{class_a_w_k_1_1_engine_ae4d0a3f3cc5600f599b2344ae1354b47}} 
+void {\bfseries init\+Mini\+Trace} (const char $\ast$out\+\_\+filepath)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a5060b6c13406e84fb5a67c323c30c38c}\label{class_a_w_k_1_1_engine_a5060b6c13406e84fb5a67c323c30c38c}} 
+void {\bfseries init\+Buffers} ()
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ab05574fdedbb20eeaf103e9773363977}\label{class_a_w_k_1_1_engine_ab05574fdedbb20eeaf103e9773363977}} 
+void {\bfseries init\+ECS} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_a_w_k_1_1_engine_a6e8c86112711d11720ffb758e158c22e}{create\+Material}} (\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters}{AWK\+::\+Material\+::\+Material\+Parameters}} new\+Mat)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a4e93a66d2739f7d39f2cc335281ae811}\label{class_a_w_k_1_1_engine_a4e93a66d2739f7d39f2cc335281ae811}} 
+void {\bfseries change\+Material\+Color} (uint32\+\_\+t mat, \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{AWK\+::\+Material\+::\+RGBA}} color)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_a_w_k_1_1_engine_a20abafd78c789588f98b37cd93233b85}{create\+Entity}} (uint64\+\_\+t mask=Component\+::\+Add\+Component\+Type\+::\+ADD\+\_\+\+ALL)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a97c1b57f01a8838e713cff015bfb0b65}\label{class_a_w_k_1_1_engine_a97c1b57f01a8838e713cff015bfb0b65}} 
+void {\bfseries enable\+System} (System\+Type type)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a92b24ed14ab2069ea994820e83801a4e}\label{class_a_w_k_1_1_engine_a92b24ed14ab2069ea994820e83801a4e}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_render_component}{Render\+Component}} $\ast$ {\bfseries add\+Render\+Component} (Entity\+Handler $\ast$entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ad823cb93bc06d9cbbd1998ded7f056fa}\label{class_a_w_k_1_1_engine_ad823cb93bc06d9cbbd1998ded7f056fa}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_render_component}{Render\+Component}} $\ast$ {\bfseries get\+Render\+Component} (const uint32\+\_\+t entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a28220ccd5cd296b64b3dd05269634841}\label{class_a_w_k_1_1_engine_a28220ccd5cd296b64b3dd05269634841}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component}{TRSComponent}} $\ast$ {\bfseries add\+TRSComponent} (Entity\+Handler $\ast$entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_afa4030a5f5265db5d7eb791fa45fa05c}\label{class_a_w_k_1_1_engine_afa4030a5f5265db5d7eb791fa45fa05c}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component}{TRSComponent}} $\ast$ {\bfseries get\+TRSComponent} (const uint32\+\_\+t entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_aac55962fbb1a9857615112f4f89808ee}\label{class_a_w_k_1_1_engine_aac55962fbb1a9857615112f4f89808ee}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component}{Local\+Transform\+Component}} $\ast$ {\bfseries add\+Local\+Transform\+Component} (Entity\+Handler $\ast$entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a3e14f7e59642c605ad4dee06bffebdf2}\label{class_a_w_k_1_1_engine_a3e14f7e59642c605ad4dee06bffebdf2}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component}{Local\+Transform\+Component}} $\ast$ {\bfseries get\+Local\+Transform\+Component} (const uint32\+\_\+t entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a9393e57744e7888767d9ad1546fd6d20}\label{class_a_w_k_1_1_engine_a9393e57744e7888767d9ad1546fd6d20}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component}{World\+Transform\+Component}} $\ast$ {\bfseries add\+World\+Transform\+Component} (Entity\+Handler $\ast$entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a544a493776184343b09c0c3ff08e751f}\label{class_a_w_k_1_1_engine_a544a493776184343b09c0c3ff08e751f}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component}{World\+Transform\+Component}} $\ast$ {\bfseries get\+World\+Transform\+Component} (const uint32\+\_\+t entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a9ab448f9b2e67de702f84e2ef5c886e3}\label{class_a_w_k_1_1_engine_a9ab448f9b2e67de702f84e2ef5c886e3}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{Node\+Component}} $\ast$ {\bfseries add\+Node\+Component} (Entity\+Handler $\ast$entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ae7c0f04b2c7dbeb0c3e12fcf83189cd8}\label{class_a_w_k_1_1_engine_ae7c0f04b2c7dbeb0c3e12fcf83189cd8}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{Node\+Component}} $\ast$ {\bfseries get\+Node\+Component} (const uint32\+\_\+t entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a5949047ab2529839ba3be88337688d7e}\label{class_a_w_k_1_1_engine_a5949047ab2529839ba3be88337688d7e}} 
+void {\bfseries add\+Child} (const uint32\+\_\+t parent\+Entity, const uint32\+\_\+t child\+Entity)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a7acce3cd100bfe947bb35dcdd4af5e3f}\label{class_a_w_k_1_1_engine_a7acce3cd100bfe947bb35dcdd4af5e3f}} 
+double {\bfseries get\+Time} ()
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ac0dce77caafb56c85960f83b1028d8be}\label{class_a_w_k_1_1_engine_ac0dce77caafb56c85960f83b1028d8be}} 
+void {\bfseries start\+Render\+Loop} (std\+::function$<$ void()$>$ \&\&logic\+Func)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_aca6b7a2b01c4c5a73d77941a8756f0b6}\label{class_a_w_k_1_1_engine_aca6b7a2b01c4c5a73d77941a8756f0b6}} 
+\mbox{\hyperlink{class_a_w_k_1_1_window}{Window}} \& {\bfseries get\+Window} ()
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_afec31f9bad377017988b1776690b24a6}\label{class_a_w_k_1_1_engine_afec31f9bad377017988b1776690b24a6}} 
+void {\bfseries submit} (\mbox{\hyperlink{class_a_w_k_1_1_display_list}{Display\+List}} \&\&list)
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a6ce2a64e601bb3794e41e733afb03ea4}\label{class_a_w_k_1_1_engine_a6ce2a64e601bb3794e41e733afb03ea4}} 
+void {\bfseries render} ()
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a62f9a8c0c2c68193fa02bb25b5e73632}\label{class_a_w_k_1_1_engine_a62f9a8c0c2c68193fa02bb25b5e73632}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a1e03c328f09cc05f9e1b6007e84c1543}\label{class_a_w_k_1_1_engine_a1e03c328f09cc05f9e1b6007e84c1543}} 
+void {\bfseries End} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a78b8d7076e9f3047400d3bbf02edab67}\label{class_a_w_k_1_1_engine_a78b8d7076e9f3047400d3bbf02edab67}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_a_w_k_1_1_system}{System}} $>$ $>$ {\bfseries systems}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a8f7148fa60f56b91bfc87f8c820be181}\label{class_a_w_k_1_1_engine_a8f7148fa60f56b91bfc87f8c820be181}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_transform_tree}{Transform\+Tree}} {\bfseries transform\+Tree}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a1d80922af9bf953c0a2d60fc857bef73}\label{class_a_w_k_1_1_engine_a1d80922af9bf953c0a2d60fc857bef73}} 
+\mbox{\hyperlink{struct_a_w_k_1_1_engine_1_1_camara}{Camara}} {\bfseries camera}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_ab0f0889d4a8d1024462cf59bc4682fd9}\label{class_a_w_k_1_1_engine_ab0f0889d4a8d1024462cf59bc4682fd9}} 
+uint32\+\_\+t {\bfseries root}
+\item 
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_aa0eaf10a6100aeb7d080c750869df8c9}\label{class_a_w_k_1_1_engine_aa0eaf10a6100aeb7d080c750869df8c9}} 
+ECSData $\ast$ {\bfseries \+\_\+entity\+Data} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_w_k_1_1_engine_a20abafd78c789588f98b37cd93233b85}\label{class_a_w_k_1_1_engine_a20abafd78c789588f98b37cd93233b85}} 
+\index{AWK::Engine@{AWK::Engine}!createEntity@{createEntity}}
+\index{createEntity@{createEntity}!AWK::Engine@{AWK::Engine}}
+\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
+{\footnotesize\ttfamily uint32\+\_\+t AWK\+::\+Engine\+::create\+Entity (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{mask = {\ttfamily Component\+:\+:AddComponentType\+:\+:ADD\+\_\+ALL} }\end{DoxyParamCaption})}
+
+ECS \mbox{\Hypertarget{class_a_w_k_1_1_engine_a6e8c86112711d11720ffb758e158c22e}\label{class_a_w_k_1_1_engine_a6e8c86112711d11720ffb758e158c22e}} 
+\index{AWK::Engine@{AWK::Engine}!createMaterial@{createMaterial}}
+\index{createMaterial@{createMaterial}!AWK::Engine@{AWK::Engine}}
+\doxysubsubsection{\texorpdfstring{createMaterial()}{createMaterial()}}
+{\footnotesize\ttfamily uint32\+\_\+t AWK\+::\+Engine\+::create\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters}{AWK\+::\+Material\+::\+Material\+Parameters}}}]{new\+Mat }\end{DoxyParamCaption})}
+
+MATERIAL 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/engine.\+h\end{DoxyCompactItemize}

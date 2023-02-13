@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  buffer.cc
+  gpumanager.cc
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_equalizer\src\mollete\gpumanager.cc(31): warning C4101: 'gl_ptr': variable local sin referencia
+  Generando código...
+  EDK_workspace.vcxproj -> D:\ricardo\segundo\grafica\2pg_ta_beltranmu\EDK_workspace_equalizer\project\VS2017\EDK_workspace\..\..\..\bin\EDK_workspace.exe

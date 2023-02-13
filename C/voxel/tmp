@@ -1,0 +1,78 @@
+
+./obj/innervoxel.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <InnerVoxel>:
+   0:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   4:	e24dd024 	sub	sp, sp, #36	; 0x24
+   8:	e5903014 	ldr	r3, [r0, #20]
+   c:	e8901006 	ldm	r0, {r1, r2, ip}
+  10:	e58d3004 	str	r3, [sp, #4]
+  14:	e5903018 	ldr	r3, [r0, #24]
+  18:	e590e00c 	ldr	lr, [r0, #12]
+  1c:	e58d3008 	str	r3, [sp, #8]
+  20:	e5903024 	ldr	r3, [r0, #36]	; 0x24
+  24:	e590a010 	ldr	sl, [r0, #16]
+  28:	e590701c 	ldr	r7, [r0, #28]
+  2c:	e5908020 	ldr	r8, [r0, #32]
+  30:	e58d3014 	str	r3, [sp, #20]
+  34:	e5909028 	ldr	r9, [r0, #40]	; 0x28
+  38:	e5903034 	ldr	r3, [r0, #52]	; 0x34
+  3c:	e590602c 	ldr	r6, [r0, #44]	; 0x2c
+  40:	e5905030 	ldr	r5, [r0, #48]	; 0x30
+  44:	e5900038 	ldr	r0, [r0, #56]	; 0x38
+  48:	e1510002 	cmp	r1, r2
+  4c:	e58d3018 	str	r3, [sp, #24]
+  50:	e58d001c 	str	r0, [sp, #28]
+  54:	aa00001d 	bge	d0 <InnerVoxel+0xd0>
+  58:	e2413107 	sub	r3, r1, #-1073741823	; 0xc0000001
+  5c:	e2464004 	sub	r4, r6, #4
+  60:	e0861103 	add	r1, r6, r3, lsl #2
+  64:	e0844102 	add	r4, r4, r2, lsl #2
+  68:	e1a030c5 	asr	r3, r5, #1
+  6c:	e1a0b100 	lsl	fp, r0, #2
+  70:	e58d300c 	str	r3, [sp, #12]
+  74:	e2453001 	sub	r3, r5, #1
+  78:	e58d3010 	str	r3, [sp, #16]
+  7c:	e59d3004 	ldr	r3, [sp, #4]
+  80:	e59d2008 	ldr	r2, [sp, #8]
+  84:	e08ee003 	add	lr, lr, r3
+  88:	e08cc00a 	add	ip, ip, sl
+  8c:	e1a0364e 	asr	r3, lr, #12
+  90:	e1a0064c 	asr	r0, ip, #12
+  94:	e0800213 	add	r0, r0, r3, lsl r2
+  98:	e0000007 	and	r0, r0, r7
+  9c:	e5b13004 	ldr	r3, [r1, #4]!
+  a0:	e7d82000 	ldrb	r2, [r8, r0]
+  a4:	e0822009 	add	r2, r2, r9
+  a8:	e0030293 	mul	r3, r3, r2
+  ac:	e59d200c 	ldr	r2, [sp, #12]
+  b0:	e0823643 	add	r3, r2, r3, asr #12
+  b4:	e3530000 	cmp	r3, #0
+  b8:	da000002 	ble	c8 <InnerVoxel+0xc8>
+  bc:	e59d2010 	ldr	r2, [sp, #16]
+  c0:	e1520003 	cmp	r2, r3
+  c4:	ca000003 	bgt	d8 <InnerVoxel+0xd8>
+  c8:	e1510004 	cmp	r1, r4
+  cc:	1affffea 	bne	7c <InnerVoxel+0x7c>
+  d0:	e28dd024 	add	sp, sp, #36	; 0x24
+  d4:	e8bd8ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
+  d8:	e59d201c 	ldr	r2, [sp, #28]
+  dc:	e59d6014 	ldr	r6, [sp, #20]
+  e0:	e1550003 	cmp	r5, r3
+  e4:	e0020293 	mul	r2, r3, r2
+  e8:	e7966100 	ldr	r6, [r6, r0, lsl #2]
+  ec:	e59d0018 	ldr	r0, [sp, #24]
+  f0:	e0802102 	add	r2, r0, r2, lsl #2
+  f4:	ca000003 	bgt	108 <InnerVoxel+0x108>
+  f8:	eafffff2 	b	c8 <InnerVoxel+0xc8>
+  fc:	e1550003 	cmp	r5, r3
+ 100:	e682600b 	str	r6, [r2], fp
+ 104:	0affffef 	beq	c8 <InnerVoxel+0xc8>
+ 108:	e5920000 	ldr	r0, [r2]
+ 10c:	e2833001 	add	r3, r3, #1
+ 110:	e3500000 	cmp	r0, #0
+ 114:	1affffeb 	bne	c8 <InnerVoxel+0xc8>
+ 118:	eafffff7 	b	fc <InnerVoxel+0xfc>

@@ -1,0 +1,136 @@
+\hypertarget{struct_a_w_k_1_1_component}{}\doxysection{AWK\+::Component Struct Reference}
+\label{struct_a_w_k_1_1_component}\index{AWK::Component@{AWK::Component}}
+
+
+\mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} Struct.  
+
+
+
+
+{\ttfamily \#include $<$component.\+h$>$}
+
+Inheritance diagram for AWK\+::Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.082126cm]{struct_a_w_k_1_1_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}{Component\+Type}} \{ \newline
+\mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aa1412e720abe1997739d7e91bff3fd94}{INVALID}} = 0
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a4fee25cd6fd226ceb33dd02c22fb206c}{RENDER}}
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a210fbfb544f3409063b4b7ed4c7f292b}{TRS}}
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a960a54d85d2ad0c889e655119ac82dae}{LOCAL\+\_\+\+TRANSFORM}}
+, \newline
+\mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aebe51126769680541783189a463033ee}{WORLD\+\_\+\+TRANSFORM}}
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a09906603aebd78fa016439fec5548c21}{NODE}}
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}{MAX}}
+ \}
+\begin{DoxyCompactList}\small\item\em Component\+Type Enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2a}{Add\+Component\+Type}} \{ \newline
+\mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa18b57a688ffb2c8f945f988b74c56129}{ADD\+\_\+\+RENDER}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa0568ffde419367777f9d62b93c5b30f4}{ADD\+\_\+\+TRS}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa608e21c1634cc2ddc59c65bcfced38ae}{ADD\+\_\+\+LOCAL\+\_\+\+TRANSFORM}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aaafe0e8992299ebc16b371ee3ed6aa88a}{ADD\+\_\+\+WORLD\+\_\+\+TRANSFORM}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, \newline
+\mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa5ca4f61138dc0d5a39abf27824593f9b}{ADD\+\_\+\+NODE}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa6fc10abcf6826a748a8ab0561cfdcba0}{TRS\+\_\+\+AND\+\_\+\+TRANSFORM}} = ADD\+\_\+\+TRS $\vert$ ADD\+\_\+\+LOCAL\+\_\+\+TRANSFORM $\vert$ ADD\+\_\+\+WORLD\+\_\+\+TRANSFORM
+, \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa62db51d46dbcb7b1c0c99ddf693fcc5c}{ADD\+\_\+\+ALL}} = TRS\+\_\+\+AND\+\_\+\+TRANSFORM $\vert$ ADD\+\_\+\+RENDER $\vert$ ADD\+\_\+\+NODE
+ \}
+\begin{DoxyCompactList}\small\item\em Add\+Component\+Type Enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} Struct. 
+
+Base Archetype for the rest of the Components 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2a}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2a}} 
+\index{AWK::Component@{AWK::Component}!AddComponentType@{AddComponentType}}
+\index{AddComponentType@{AddComponentType}!AWK::Component@{AWK::Component}}
+\doxysubsubsection{\texorpdfstring{AddComponentType}{AddComponentType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2a}{AWK\+::\+Component\+::\+Add\+Component\+Type}}}
+
+
+
+Add\+Component\+Type Enum. 
+
+Different mask that the user will use to create a new entity ~\newline
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_RENDER@{ADD\_RENDER}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_RENDER@{ADD\_RENDER}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa18b57a688ffb2c8f945f988b74c56129}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa18b57a688ffb2c8f945f988b74c56129}} 
+ADD\+\_\+\+RENDER&Render Mask. Only to add a Render \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_TRS@{ADD\_TRS}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_TRS@{ADD\_TRS}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa0568ffde419367777f9d62b93c5b30f4}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa0568ffde419367777f9d62b93c5b30f4}} 
+ADD\+\_\+\+TRS&TRS Mask. Only to add a TRS \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_LOCAL\_TRANSFORM@{ADD\_LOCAL\_TRANSFORM}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_LOCAL\_TRANSFORM@{ADD\_LOCAL\_TRANSFORM}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa608e21c1634cc2ddc59c65bcfced38ae}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa608e21c1634cc2ddc59c65bcfced38ae}} 
+ADD\+\_\+\+LOCAL\+\_\+\+TRANSFORM&Local Transform Mask. Only to add a Local Transform \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_WORLD\_TRANSFORM@{ADD\_WORLD\_TRANSFORM}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_WORLD\_TRANSFORM@{ADD\_WORLD\_TRANSFORM}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aaafe0e8992299ebc16b371ee3ed6aa88a}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aaafe0e8992299ebc16b371ee3ed6aa88a}} 
+ADD\+\_\+\+WORLD\+\_\+\+TRANSFORM&World Transform Mask. Only to add a World Transform \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_NODE@{ADD\_NODE}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_NODE@{ADD\_NODE}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa5ca4f61138dc0d5a39abf27824593f9b}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa5ca4f61138dc0d5a39abf27824593f9b}} 
+ADD\+\_\+\+NODE&Node Mask. Only to add a Node \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRS\_AND\_TRANSFORM@{TRS\_AND\_TRANSFORM}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!TRS\_AND\_TRANSFORM@{TRS\_AND\_TRANSFORM}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa6fc10abcf6826a748a8ab0561cfdcba0}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa6fc10abcf6826a748a8ab0561cfdcba0}} 
+TRS\+\_\+\+AND\+\_\+\+TRANSFORM&TRS and Transform Mask. To add TRS, Local and world transform component \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD\_ALL@{ADD\_ALL}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!ADD\_ALL@{ADD\_ALL}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa62db51d46dbcb7b1c0c99ddf693fcc5c}\label{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa62db51d46dbcb7b1c0c99ddf693fcc5c}} 
+ADD\+\_\+\+ALL&All Add possible components for a entity \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}} 
+\index{AWK::Component@{AWK::Component}!ComponentType@{ComponentType}}
+\index{ComponentType@{ComponentType}!AWK::Component@{AWK::Component}}
+\doxysubsubsection{\texorpdfstring{ComponentType}{ComponentType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}{AWK\+::\+Component\+::\+Component\+Type}}}
+
+
+
+Component\+Type Enum. 
+
+Different types that a \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} may be \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID@{INVALID}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!INVALID@{INVALID}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aa1412e720abe1997739d7e91bff3fd94}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aa1412e720abe1997739d7e91bff3fd94}} 
+INVALID&Enum value Invalid, invalid component. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RENDER@{RENDER}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!RENDER@{RENDER}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a4fee25cd6fd226ceb33dd02c22fb206c}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a4fee25cd6fd226ceb33dd02c22fb206c}} 
+RENDER&Enum value Render, render component type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRS@{TRS}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!TRS@{TRS}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a210fbfb544f3409063b4b7ed4c7f292b}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a210fbfb544f3409063b4b7ed4c7f292b}} 
+TRS&Enum value TRS, translation rotate and scale. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOCAL\_TRANSFORM@{LOCAL\_TRANSFORM}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!LOCAL\_TRANSFORM@{LOCAL\_TRANSFORM}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a960a54d85d2ad0c889e655119ac82dae}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a960a54d85d2ad0c889e655119ac82dae}} 
+LOCAL\+\_\+\+TRANSFORM&Enum value Local\+\_\+transform, local transform component \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WORLD\_TRANSFORM@{WORLD\_TRANSFORM}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!WORLD\_TRANSFORM@{WORLD\_TRANSFORM}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aebe51126769680541783189a463033ee}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aebe51126769680541783189a463033ee}} 
+WORLD\+\_\+\+TRANSFORM&Enum value World\+\_\+transform, world transform component \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NODE@{NODE}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!NODE@{NODE}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a09906603aebd78fa016439fec5548c21}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a09906603aebd78fa016439fec5548c21}} 
+NODE&Enum value Node, node component type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX@{MAX}!AWK::Component@{AWK::Component}}\index{AWK::Component@{AWK::Component}!MAX@{MAX}}}\mbox{\Hypertarget{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}\label{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}} 
+MAX&Enum value Max, know how many component the engine has and where is the limit \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/component.\+h\end{DoxyCompactItemize}

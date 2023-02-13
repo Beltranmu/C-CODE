@@ -1,0 +1,115 @@
+\hypertarget{class_background}{}\doxysection{Background Class Reference}
+\label{class_background}\index{Background@{Background}}
+Inheritance diagram for Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_background}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_background_a877afe2b3f0571b3c0cc9818ad8235bf}{init}} (const \mbox{\hyperlink{struct_r_b_m_1_1_transform2}{R\+B\+M\+::\+Transform2}} tr, const uint8\+\_\+t hs, const uint8\+\_\+t vs, \mbox{\hyperlink{class_texture}{Texture}} \&tex, const \mbox{\hyperlink{struct_r_b_m_1_1_vec2}{R\+B\+M\+::\+Vec2}} $\ast$vel)
+\begin{DoxyCompactList}\small\item\em init the background \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_af199c68c0312998396433911f4589a72}{updateB}} (float dt)
+\begin{DoxyCompactList}\small\item\em Update the position of the background using board width and height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_a1c8c3dd260a9b8fcf9fc5d9f8d3512b4}{update}} (float dt)
+\begin{DoxyCompactList}\small\item\em Update the position of the background using window width and height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_background_aca6cfe8dc7f1b5b54f6910be0c784105}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em draw the background and tile it if is necesary \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_background_ae3c0f60ff693348597ca3938fd3d4d6f}\label{class_background_ae3c0f60ff693348597ca3938fd3d4d6f}} 
+uint8\+\_\+t {\bfseries horizontal\+\_\+scroll\+\_\+}
+\item 
+\mbox{\Hypertarget{class_background_a26c96e80fe8d79f6b8925cdf0057d5cd}\label{class_background_a26c96e80fe8d79f6b8925cdf0057d5cd}} 
+uint8\+\_\+t {\bfseries vertical\+\_\+scroll\+\_\+}
+\item 
+\mbox{\Hypertarget{class_background_a6550b726c2d265e341cee2f2b1932d5a}\label{class_background_a6550b726c2d265e341cee2f2b1932d5a}} 
+\mbox{\hyperlink{struct_r_b_m_1_1_vec2}{R\+B\+M\+::\+Vec2}} {\bfseries velocity\+\_\+}
+\item 
+\mbox{\Hypertarget{class_background_a1480303a4ed825417d5beaf61b358dce}\label{class_background_a1480303a4ed825417d5beaf61b358dce}} 
+\mbox{\hyperlink{class_texture}{Texture}} $\ast$ {\bfseries texture\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_background_aca6cfe8dc7f1b5b54f6910be0c784105}\label{class_background_aca6cfe8dc7f1b5b54f6910be0c784105}} 
+\index{Background@{Background}!draw@{draw}}
+\index{draw@{draw}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Background\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw the background and tile it if is necesary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ren. Renderer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_entity_a8960e2678dfcdeb720f08103bff49e07}{Entity}}.
+
+\mbox{\Hypertarget{class_background_a877afe2b3f0571b3c0cc9818ad8235bf}\label{class_background_a877afe2b3f0571b3c0cc9818ad8235bf}} 
+\index{Background@{Background}!init@{init}}
+\index{init@{init}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Background\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_r_b_m_1_1_transform2}{R\+B\+M\+::\+Transform2}}}]{tr,  }\item[{const uint8\+\_\+t}]{hs,  }\item[{const uint8\+\_\+t}]{vs,  }\item[{\mbox{\hyperlink{class_texture}{Texture}} \&}]{tex,  }\item[{const \mbox{\hyperlink{struct_r_b_m_1_1_vec2}{R\+B\+M\+::\+Vec2}} $\ast$}]{vel }\end{DoxyParamCaption})}
+
+
+
+init the background 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{struct_r_b_m_1_1_transform2}{R\+B\+M\+::\+Transform2}} tr the initial transform of the background \\
+\hline
+{\em const} & uint8\+\_\+t hs 0 = horizontal mov desactivated otherwise activated \\
+\hline
+{\em const} & uint8\+\_\+t vs 0 = horizontal mov desactivated otherwise activated \\
+\hline
+{\em Texture\&} & tex the texture of the background \\
+\hline
+{\em const} & \mbox{\hyperlink{struct_r_b_m_1_1_vec2}{R\+B\+M\+::\+Vec2}}$\ast$ vel speed of the background \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_background_a1c8c3dd260a9b8fcf9fc5d9f8d3512b4}\label{class_background_a1c8c3dd260a9b8fcf9fc5d9f8d3512b4}} 
+\index{Background@{Background}!update@{update}}
+\index{update@{update}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Background\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Update the position of the background using window width and height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & dt delta time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_background_af199c68c0312998396433911f4589a72}\label{class_background_af199c68c0312998396433911f4589a72}} 
+\index{Background@{Background}!updateB@{updateB}}
+\index{updateB@{updateB}!Background@{Background}}
+\doxysubsubsection{\texorpdfstring{updateB()}{updateB()}}
+{\footnotesize\ttfamily void Background\+::updateB (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Update the position of the background using board width and height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & dt delta time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/background.\+h\end{DoxyCompactItemize}

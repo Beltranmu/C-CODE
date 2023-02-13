@@ -1,0 +1,79 @@
+\hypertarget{class_scene}{}\doxysection{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_a7edd8111e127173d2d06b571a177d7b1}\label{class_scene_a7edd8111e127173d2d06b571a177d7b1}} 
+virtual void \mbox{\hyperlink{class_scene_a7edd8111e127173d2d06b571a177d7b1}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em init the scene. Pure virtual \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}{input}} (S\+D\+L\+\_\+\+Event $\ast$eve)=0
+\begin{DoxyCompactList}\small\item\em Contains the input of each scene. Pure virtual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a7faff47f5c1b1ebc986f768c9b9732ec}\label{class_scene_a7faff47f5c1b1ebc986f768c9b9732ec}} 
+virtual void \mbox{\hyperlink{class_scene_a7faff47f5c1b1ebc986f768c9b9732ec}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Contains the update fuctions of each scene. Pure virtual. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_aff2cd67a82745747f3ee9ebde7838c71}{draw\+Imgui}} (S\+D\+L\+\_\+\+Renderer $\ast$ren)=0
+\begin{DoxyCompactList}\small\item\em use to draw extra informatio that is not child of entity (Imgui). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a4ff0d215f0547862bd71c9d9341102ba}\label{class_scene_a4ff0d215f0547862bd71c9d9341102ba}} 
+virtual void \mbox{\hyperlink{class_scene_a4ff0d215f0547862bd71c9d9341102ba}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Contains the functions that has to be done before leave that scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a3d2a28854b8994c1c443fd1ec7227151}\label{class_scene_a3d2a28854b8994c1c443fd1ec7227151}} 
+void \mbox{\hyperlink{class_scene_a3d2a28854b8994c1c443fd1ec7227151}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Draw all the enity list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_ac7686cf5947dea5f9dca2697cfc72536}\label{class_scene_ac7686cf5947dea5f9dca2697cfc72536}} 
+std\+::list$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ {\bfseries ent\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_aff2cd67a82745747f3ee9ebde7838c71}\label{class_scene_aff2cd67a82745747f3ee9ebde7838c71}} 
+\index{Scene@{Scene}!drawImgui@{drawImgui}}
+\index{drawImgui@{drawImgui}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{drawImgui()}{drawImgui()}}
+{\footnotesize\ttfamily virtual void Scene\+::draw\+Imgui (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+use to draw extra informatio that is not child of entity (Imgui). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rendeder$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_combat_scene_a2ac1e8b1d6f77db79510a82b3a1fbd93}{Combat\+Scene}}, \mbox{\hyperlink{class_custo_scene_aa777ed583cd1ebff20d6e5e326ed77c8}{Custo\+Scene}}, \mbox{\hyperlink{class_menu_scene_acc9acc1b709b9b1d0c47056efd2f4640}{Menu\+Scene}}, and \mbox{\hyperlink{class_main_scene_a553d714f76ca045bc3c84cf5c207c566}{Main\+Scene}}.
+
+\mbox{\Hypertarget{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}\label{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}} 
+\index{Scene@{Scene}!input@{input}}
+\index{input@{input}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily virtual void Scene\+::input (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{eve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Contains the input of each scene. Pure virtual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & eve. Event of S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_combat_scene_a8af32d9d1ba09dc64b9b3daad3858c86}{Combat\+Scene}}, \mbox{\hyperlink{class_custo_scene_a0fc0ead99789b3d65ea39a457453e06b}{Custo\+Scene}}, \mbox{\hyperlink{class_menu_scene_a2c7cfe997946ed07781cd89c0523f5f9}{Menu\+Scene}}, \mbox{\hyperlink{class_main_scene_ae89913fd101c94f6d0ff93ae4b737688}{Main\+Scene}}, and \mbox{\hyperlink{class_fight_scene_a20cd3b7ee51929107492e4cf7dae6cc5}{Fight\+Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/scene.\+h\end{DoxyCompactItemize}

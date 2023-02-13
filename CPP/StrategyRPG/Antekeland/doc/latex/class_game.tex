@@ -1,0 +1,101 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_aab33c9d3dda5fc4d11285472b07f872b}{load\+Scene}} (int n\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em load a new scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a70c14ceda1dbbf1e3ea2c3309645031c}{main\+Game}} ()
+\begin{DoxyCompactList}\small\item\em load a new scene \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_af73d1ead1703c430cf0ad4d40af1d239}\label{class_game_af73d1ead1703c430cf0ad4d40af1d239}} 
+void \mbox{\hyperlink{class_game_af73d1ead1703c430cf0ad4d40af1d239}{input}} ()
+\begin{DoxyCompactList}\small\item\em contains all the input fuction of the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a79df6376b332d63c9eca0dcee30305c3}\label{class_game_a79df6376b332d63c9eca0dcee30305c3}} 
+void \mbox{\hyperlink{class_game_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\begin{DoxyCompactList}\small\item\em contains all the update fuction of the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd}\label{class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd}} 
+void \mbox{\hyperlink{class_game_a6d54497ce3a66f6dd45eacfdccc8d0bd}{draw}} ()
+\begin{DoxyCompactList}\small\item\em contains all the draw fuction of the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a66bffb23fb564e9bb3067532c6cc8d4e}\label{class_game_a66bffb23fb564e9bb3067532c6cc8d4e}} 
+int \mbox{\hyperlink{class_game_a66bffb23fb564e9bb3067532c6cc8d4e}{init}} ()
+\begin{DoxyCompactList}\small\item\em contains all the init fuction of the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a8272be134d16c277bb014ad6a22fc357}\label{class_game_a8272be134d16c277bb014ad6a22fc357}} 
+void \mbox{\hyperlink{class_game_a8272be134d16c277bb014ad6a22fc357}{quit}} ()
+\begin{DoxyCompactList}\small\item\em contains all the quit fuction of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a1ef880351eb08f25adc12adf38c4ac51}\label{class_game_a1ef880351eb08f25adc12adf38c4ac51}} 
+S\+D\+L\+\_\+\+Window $\ast$ {\bfseries win\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_aca08d5c23f398606af042900db1c76a8}\label{class_game_aca08d5c23f398606af042900db1c76a8}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries ren\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_acb9bb6a61d11711d2be56dea1e7ed1e8}\label{class_game_acb9bb6a61d11711d2be56dea1e7ed1e8}} 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ {\bfseries current\+\_\+scene\+\_\+} \mbox{[}k\+N\+Scenes\mbox{]}
+\item 
+\mbox{\Hypertarget{class_game_a7630c232ce07296b5dcdabdf799cb07e}\label{class_game_a7630c232ce07296b5dcdabdf799cb07e}} 
+int32\+\_\+t {\bfseries current\+\_\+id\+\_\+scene\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_a804718fc84f11b93785d0596302af028}\label{class_game_a804718fc84f11b93785d0596302af028}} 
+int {\bfseries quit\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_a54bb9c252245c3efe3010c5474ecd67a}\label{class_game_a54bb9c252245c3efe3010c5474ecd67a}} 
+double {\bfseries current\+\_\+time\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_af1e08a070d4425f7d8ecf8c2d31e7937}\label{class_game_af1e08a070d4425f7d8ecf8c2d31e7937}} 
+double {\bfseries last\+\_\+time\+\_\+}
+\item 
+\mbox{\Hypertarget{class_game_ad0eea0e2d89057c9227a9fcfc8c288aa}\label{class_game_ad0eea0e2d89057c9227a9fcfc8c288aa}} 
+const unsigned char {\bfseries fps} = 60
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a2dfd50f04348af8fb4b5706717a4151b}\label{class_game_a2dfd50f04348af8fb4b5706717a4151b}} 
+static const int32\+\_\+t {\bfseries k\+N\+Scenes} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_aab33c9d3dda5fc4d11285472b07f872b}\label{class_game_aab33c9d3dda5fc4d11285472b07f872b}} 
+\index{Game@{Game}!loadScene@{loadScene}}
+\index{loadScene@{loadScene}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loadScene()}{loadScene()}}
+{\footnotesize\ttfamily int Game\+::load\+Scene (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+scene }\end{DoxyParamCaption})}
+
+
+
+load a new scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & index of the new scene to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the previous scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a70c14ceda1dbbf1e3ea2c3309645031c}\label{class_game_a70c14ceda1dbbf1e3ea2c3309645031c}} 
+\index{Game@{Game}!mainGame@{mainGame}}
+\index{mainGame@{mainGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mainGame()}{mainGame()}}
+{\footnotesize\ttfamily void Game\+::main\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+load a new scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & index of the new scene to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the previous scene
+\end{DoxyReturn}
+contains all the fuction of the main loop of the game 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game.\+h\end{DoxyCompactItemize}

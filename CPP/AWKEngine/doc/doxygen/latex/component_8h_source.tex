@@ -1,0 +1,88 @@
+\hypertarget{component_8h_source}{}\doxysection{component.\+h}
+\label{component_8h_source}\index{include/component.h@{include/component.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{comment}{/************************************************}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Component Class}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Developed by Ricardo BM \& Javier BA}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Graphic Engine Development}}
+\DoxyCodeLine{6 \textcolor{comment}{ * ESAT -\/ 2022}}
+\DoxyCodeLine{7 \textcolor{comment}{ ***********************************************/}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_COMPONENT\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_COMPONENT\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <glm.hpp>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{16   \textcolor{keyword}{struct }EntityHandler;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}}}
+\DoxyCodeLine{22   \{}
+\DoxyCodeLine{23       \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}}() \{ \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26       \textcolor{keyword}{enum} \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}{ComponentType}} \{}
+\DoxyCodeLine{27         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aa1412e720abe1997739d7e91bff3fd94}{INVALID}} = 0,      }
+\DoxyCodeLine{28         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a4fee25cd6fd226ceb33dd02c22fb206c}{RENDER}} ,          }
+\DoxyCodeLine{29         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a210fbfb544f3409063b4b7ed4c7f292b}{TRS}},              }
+\DoxyCodeLine{30         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a960a54d85d2ad0c889e655119ac82dae}{LOCAL\_TRANSFORM}},  }
+\DoxyCodeLine{31         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52aebe51126769680541783189a463033ee}{WORLD\_TRANSFORM}},  }
+\DoxyCodeLine{32         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52a09906603aebd78fa016439fec5548c21}{NODE}},             }
+\DoxyCodeLine{33         \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52af7208c7675a9d123f3cedf65f36d55e1}{MAX}}               }
+\DoxyCodeLine{34       \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38       \textcolor{keyword}{enum} \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2a}{AddComponentType}} \{}
+\DoxyCodeLine{39         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa18b57a688ffb2c8f945f988b74c56129}{ADD\_RENDER}} = 1 << 1,          }
+\DoxyCodeLine{40         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa0568ffde419367777f9d62b93c5b30f4}{ADD\_TRS}} = 1 << 2,             }
+\DoxyCodeLine{41         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa608e21c1634cc2ddc59c65bcfced38ae}{ADD\_LOCAL\_TRANSFORM}} = 1 << 3, }
+\DoxyCodeLine{42         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aaafe0e8992299ebc16b371ee3ed6aa88a}{ADD\_WORLD\_TRANSFORM}} = 1 << 4, }
+\DoxyCodeLine{43         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa5ca4f61138dc0d5a39abf27824593f9b}{ADD\_NODE}} = 1 << 5,            }
+\DoxyCodeLine{45         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa6fc10abcf6826a748a8ab0561cfdcba0}{TRS\_AND\_TRANSFORM}} = \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa0568ffde419367777f9d62b93c5b30f4}{ADD\_TRS}} | \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa608e21c1634cc2ddc59c65bcfced38ae}{ADD\_LOCAL\_TRANSFORM}} | \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aaafe0e8992299ebc16b371ee3ed6aa88a}{ADD\_WORLD\_TRANSFORM}}, }
+\DoxyCodeLine{46         \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa62db51d46dbcb7b1c0c99ddf693fcc5c}{ADD\_ALL}} = \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa6fc10abcf6826a748a8ab0561cfdcba0}{TRS\_AND\_TRANSFORM}} | \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa18b57a688ffb2c8f945f988b74c56129}{ADD\_RENDER}} | \mbox{\hyperlink{struct_a_w_k_1_1_component_af7f2a560100edf88bba82c3046fc6a2aa5ca4f61138dc0d5a39abf27824593f9b}{ADD\_NODE}} }
+\DoxyCodeLine{47       \};}
+\DoxyCodeLine{48     \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_render_component}{RenderComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \{}
+\DoxyCodeLine{53     uint32\_t \mbox{\hyperlink{struct_a_w_k_1_1_render_component_a1c79fe6f82fad8f4ca9a075b18b7a81a}{meshID}};          }
+\DoxyCodeLine{54     uint32\_t \mbox{\hyperlink{struct_a_w_k_1_1_render_component_a91859f5e7464322e6a3d063241759c3c}{materialID}};      }
+\DoxyCodeLine{55   \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component}{TRSComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}}\{}
+\DoxyCodeLine{60     glm::vec3 \mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component_a70609d4dcc4b693e8c029ef37511a3a6}{translation}};    }
+\DoxyCodeLine{61     glm::vec3 \mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component_a14c4695c5bf79a78485615b8eea0998f}{rotation}};       }
+\DoxyCodeLine{62     glm::vec3 \mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component_a33e838398dd0c809890ab6a34006bd66}{scale}};          }
+\DoxyCodeLine{63   \};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component}{LocalTransformComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \{}
+\DoxyCodeLine{68     glm::mat4 \mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component_a0cc4f18eb20839a635410501ff4aaac8}{tr}}; }
+\DoxyCodeLine{69   \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component}{WorldTransformComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \{}
+\DoxyCodeLine{74     glm::mat4 \mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component_aab6f23a9ef3294d90dd92e2adb808927}{tr}}; }
+\DoxyCodeLine{75   \};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77  }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80   \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_node_component}{NodeComponent}} : \textcolor{keyword}{public} \mbox{\hyperlink{struct_a_w_k_1_1_component}{Component}} \{}
+\DoxyCodeLine{81     int32\_t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a94fc05b287f7a9b8a2d6249cd0bc0a9d}{parent}} = -\/1;      }
+\DoxyCodeLine{82     uint32\_t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a49caa7e16e16722fc8bae03ca6dba756}{lvl}} = 0;         }
+\DoxyCodeLine{83     uint32\_t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_aaec1cc1a6b71f0a358e077138d757929}{index}} = 0 ;      }
+\DoxyCodeLine{84     int32\_t \mbox{\hyperlink{struct_a_w_k_1_1_node_component_a203b08ee0bc0da3a90837aaf2fc27b4e}{indexparent}} = -\/1; }
+\DoxyCodeLine{85   \};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88  }
+\DoxyCodeLine{89 \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_COMPONENT\_H\_\_}}
+
+\end{DoxyCode}

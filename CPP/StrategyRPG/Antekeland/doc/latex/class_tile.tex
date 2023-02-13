@@ -1,0 +1,76 @@
+\hypertarget{class_tile}{}\doxysection{Tile Class Reference}
+\label{class_tile}\index{Tile@{Tile}}
+Inheritance diagram for Tile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tile_aa31042be0ef5b34ed85915758ff386df}{init}} (const S\+D\+L\+\_\+\+Rect $\ast$r, const uint8\+\_\+t t, const uint8\+\_\+t s, const int8\+\_\+t e)
+\begin{DoxyCompactList}\small\item\em Init a tile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tile_ad61697b43f3c2559e641bce7086f84c6}\label{class_tile_ad61697b43f3c2559e641bce7086f84c6}} 
+void \mbox{\hyperlink{class_tile_ad61697b43f3c2559e641bce7086f84c6}{init\+Sub\+Sprite}} ()
+\begin{DoxyCompactList}\small\item\em Set the size and position of the board tiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_aa9ccbf99dee5520d9c723307fd6a4f24}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Draw a tile and if it necesary it duplicate it to do spherical world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tile_aa45826608571471510be37cec8b66808}\label{class_tile_aa45826608571471510be37cec8b66808}} 
+uint8\+\_\+t {\bfseries state\+\_\+}
+\item 
+\mbox{\Hypertarget{class_tile_a85f6a729946e7907a90975bc962b6351}\label{class_tile_a85f6a729946e7907a90975bc962b6351}} 
+uint8\+\_\+t {\bfseries type\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_aa9ccbf99dee5520d9c723307fd6a4f24}\label{class_tile_aa9ccbf99dee5520d9c723307fd6a4f24}} 
+\index{Tile@{Tile}!draw@{draw}}
+\index{draw@{draw}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Tile\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a tile and if it necesary it duplicate it to do spherical world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ren, S\+DL renderer \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_sprite_a2ae3f2898a70b8c0749d67f99f13a15d}{Sprite}}.
+
+\mbox{\Hypertarget{class_tile_aa31042be0ef5b34ed85915758ff386df}\label{class_tile_aa31042be0ef5b34ed85915758ff386df}} 
+\index{Tile@{Tile}!init@{init}}
+\index{init@{init}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Tile\+::init (\begin{DoxyParamCaption}\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{r,  }\item[{const uint8\+\_\+t}]{t,  }\item[{const uint8\+\_\+t}]{s,  }\item[{const int8\+\_\+t}]{e }\end{DoxyParamCaption})}
+
+
+
+Init a tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ r, Where thi tile is \\
+\hline
+{\em const} & uint8\+\_\+t t, his type \\
+\hline
+{\em const} & uint8\+\_\+t s, his state \\
+\hline
+{\em const} & uint8\+\_\+t e, enabled or not \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tile.\+h\end{DoxyCompactItemize}

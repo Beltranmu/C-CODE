@@ -1,0 +1,75 @@
+\hypertarget{display_list_8h_source}{}\doxysection{display\+List.\+h}
+\label{display_list_8h_source}\index{include/displayList.h@{include/displayList.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_DISPLAYLIST\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_DISPLAYLIST\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <assert.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}glm.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}engine.h"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}geometrybuilder.h"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}}\{}
+\DoxyCodeLine{21   }
+\DoxyCodeLine{22   \textcolor{keyword}{class }GPUState;}
+\DoxyCodeLine{23   \textcolor{keyword}{class }Engine;}
+\DoxyCodeLine{24   }
+\DoxyCodeLine{25   \textcolor{keyword}{class }\mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}} \{}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keyword}{public}:}
+\DoxyCodeLine{28       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}();}
+\DoxyCodeLine{29       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{\string~DisplayList}}();}
+\DoxyCodeLine{30       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}(\mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\&\&) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{31       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33       \textcolor{comment}{/* Methods to create the commands */}}
+\DoxyCodeLine{34       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\& clear(\textcolor{keywordtype}{float} r, \textcolor{keywordtype}{float} g, \textcolor{keywordtype}{float} b, \textcolor{keywordtype}{float} a);}
+\DoxyCodeLine{35       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\& drawGeometry(uint32\_t id\_geo, glm::mat4 mat, uint32\_t id\_mat);}
+\DoxyCodeLine{36       \mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\& createGeometry(std::vector<GeometryBuilder::VertexAtrrib> vertices,}
+\DoxyCodeLine{37                                   std::vector<uint32\_t> id\_vertices);}
+\DoxyCodeLine{38    }
+\DoxyCodeLine{39       \textcolor{keywordtype}{void} swap();}
+\DoxyCodeLine{40       \textcolor{keywordtype}{bool} executeOnGPU(Engine::GPUState* gpuState);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{private}:}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44       \textcolor{keyword}{struct }Command\{}
+\DoxyCodeLine{45         \textcolor{keyword}{virtual} \string~Command() \{\};}
+\DoxyCodeLine{46         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} executeOnGPU(Engine::GPUState* gpuState) = 0;}
+\DoxyCodeLine{47       \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49       \textcolor{keyword}{struct }ClearCommand : \textcolor{keyword}{public} Command\{}
+\DoxyCodeLine{50         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} executeOnGPU(Engine::GPUState* gpuState);}
+\DoxyCodeLine{51           \textcolor{keywordtype}{float} r, g, b, a;}
+\DoxyCodeLine{52       \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54       \textcolor{comment}{//The good one}}
+\DoxyCodeLine{55       \textcolor{keyword}{struct }DrawGeometry: \textcolor{keyword}{public} Command \{}
+\DoxyCodeLine{56         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} executeOnGPU(Engine::GPUState* gpuState);}
+\DoxyCodeLine{57         uint32\_t ID\_geo;}
+\DoxyCodeLine{58         glm::mat4 modelMatrix;}
+\DoxyCodeLine{59         uint32\_t ID\_mat;}
+\DoxyCodeLine{60       \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62       \textcolor{keyword}{struct }CreateGeometry : \textcolor{keyword}{public} Command \{}
+\DoxyCodeLine{63         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} executeOnGPU(Engine::GPUState* gpuState);}
+\DoxyCodeLine{64         std::vector<GeometryBuilder::VertexAtrrib> vertices;}
+\DoxyCodeLine{65         std::vector<uint32\_t> indices\_vertices;}
+\DoxyCodeLine{66       \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68       \textcolor{keywordtype}{bool} endWithSwap;}
+\DoxyCodeLine{69       std::list<std::unique\_ptr<Command>> \_commands;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71   \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_DISPLAYLIST\_H\_\_}}
+
+\end{DoxyCode}

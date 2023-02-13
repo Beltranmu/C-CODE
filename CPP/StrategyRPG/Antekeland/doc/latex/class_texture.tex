@@ -1,0 +1,93 @@
+\hypertarget{class_texture}{}\doxysection{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_texture_a253c7c9e1b4794b152f3e222a5c4dacc}{load\+Texture}} (const char $\ast$img\+\_\+path, S\+D\+L\+\_\+\+Renderer $\ast$r)
+\begin{DoxyCompactList}\small\item\em load a new texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_aca5b8ffc82756dd2f4c9b76a5a9b0776}\label{class_texture_aca5b8ffc82756dd2f4c9b76a5a9b0776}} 
+int32\+\_\+t {\bfseries width} ()
+\item 
+\mbox{\Hypertarget{class_texture_a3b85b0ab9adaba62f3118ea4b959ff61}\label{class_texture_a3b85b0ab9adaba62f3118ea4b959ff61}} 
+int32\+\_\+t {\bfseries height} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_texture}{Texture}} $\ast$ \mbox{\hyperlink{class_texture_a4a2aa5841326664b2dbfbe95f51d8c84}{Create\+Texture}} (const char $\ast$img\+\_\+path, S\+D\+L\+\_\+\+Renderer $\ast$r)
+\begin{DoxyCompactList}\small\item\em Create a new texture. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_texture}{Texture}} $\ast$ \mbox{\hyperlink{class_texture_a9c222e672403465ab623cf242192dfa6}{Create\+Empty\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Create a new texture, but empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_ac14256a1e0f21760807111b516c2344e}\label{class_texture_ac14256a1e0f21760807111b516c2344e}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_a8e8b7d5773f7cbd4f374865fabad5d4a}\label{class_texture_a8e8b7d5773f7cbd4f374865fabad5d4a}} 
+static const int32\+\_\+t {\bfseries k\+Max\+Textures} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_a9c222e672403465ab623cf242192dfa6}\label{class_texture_a9c222e672403465ab623cf242192dfa6}} 
+\index{Texture@{Texture}!CreateEmptyTexture@{CreateEmptyTexture}}
+\index{CreateEmptyTexture@{CreateEmptyTexture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{CreateEmptyTexture()}{CreateEmptyTexture()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_texture}{Texture}}$\ast$ Texture\+::\+Create\+Empty\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new texture, but empty. 
+
+\begin{DoxyReturn}{Returns}
+the texture just created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_a4a2aa5841326664b2dbfbe95f51d8c84}\label{class_texture_a4a2aa5841326664b2dbfbe95f51d8c84}} 
+\index{Texture@{Texture}!CreateTexture@{CreateTexture}}
+\index{CreateTexture@{CreateTexture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{CreateTexture()}{CreateTexture()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_texture}{Texture}}$\ast$ Texture\+::\+Create\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{img\+\_\+path,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ img\+\_\+path, the path of the texture \\
+\hline
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & r, S\+DL renderer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the texture just created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_a253c7c9e1b4794b152f3e222a5c4dacc}\label{class_texture_a253c7c9e1b4794b152f3e222a5c4dacc}} 
+\index{Texture@{Texture}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily int Texture\+::load\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{img\+\_\+path,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+load a new texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ img\+\_\+path, the path of the texture \\
+\hline
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & r, S\+DL renderer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if all ok, 1 not okay 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/texture.\+h\end{DoxyCompactItemize}

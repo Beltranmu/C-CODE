@@ -1,0 +1,103 @@
+\hypertarget{class_combat_scene}{}\doxysection{Combat\+Scene Class Reference}
+\label{class_combat_scene}\index{CombatScene@{CombatScene}}
+Inheritance diagram for Combat\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_combat_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_combat_scene_ab7fab3320798eabf5eade39fc820148c}\label{class_combat_scene_ab7fab3320798eabf5eade39fc820148c}} 
+void \mbox{\hyperlink{class_combat_scene_ab7fab3320798eabf5eade39fc820148c}{init}} () override
+\begin{DoxyCompactList}\small\item\em init the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_combat_scene_a8af32d9d1ba09dc64b9b3daad3858c86}{input}} (S\+D\+L\+\_\+\+Event $\ast$eve) override
+\begin{DoxyCompactList}\small\item\em Contains the input of each scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combat_scene_a5288df4351db27c5efadf07225e0dc87}\label{class_combat_scene_a5288df4351db27c5efadf07225e0dc87}} 
+void \mbox{\hyperlink{class_combat_scene_a5288df4351db27c5efadf07225e0dc87}{update}} () override
+\begin{DoxyCompactList}\small\item\em Contains the update fuctions of each scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_combat_scene_a2ac1e8b1d6f77db79510a82b3a1fbd93}{draw\+Imgui}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em use to draw extra informatio that is not child of entity (Imgui). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_combat_scene_aae7052c8ec4bb0e458ce35421648c1dd}\label{class_combat_scene_aae7052c8ec4bb0e458ce35421648c1dd}} 
+\mbox{\hyperlink{class_rect}{Rect}} {\bfseries combat\+\_\+button\+\_\+} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_combat_scene_adfb9f38d8d1efd769dd395d0b1c14236}\label{class_combat_scene_adfb9f38d8d1efd769dd395d0b1c14236}} 
+\mbox{\hyperlink{class_label}{Label}} {\bfseries actions\+\_\+text\+\_\+} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a2615d99186e2a78f5134e45fb4496bdd}\label{class_combat_scene_a2615d99186e2a78f5134e45fb4496bdd}} 
+unsigned char {\bfseries attacking\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a39b16e201d035bc4400fbba250e3dc1e}\label{class_combat_scene_a39b16e201d035bc4400fbba250e3dc1e}} 
+\mbox{\hyperlink{class_sprite}{Sprite}} {\bfseries cave\+\_\+} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_combat_scene_afd14c4b8553f9062eaf843ea37645634}\label{class_combat_scene_afd14c4b8553f9062eaf843ea37645634}} 
+int16\+\_\+t {\bfseries num\+\_\+turns\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a84bde3d7e05133f1dca321a22c944556}\label{class_combat_scene_a84bde3d7e05133f1dca321a22c944556}} 
+unsigned char {\bfseries current\+\_\+character\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a443f8d1b3d40abb6e180878f73411223}\label{class_combat_scene_a443f8d1b3d40abb6e180878f73411223}} 
+unsigned char {\bfseries total\+\_\+turns\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a1f72e4c6cee1b38c5389870938ee01d9}\label{class_combat_scene_a1f72e4c6cee1b38c5389870938ee01d9}} 
+unsigned char {\bfseries attack\+\_\+range\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_af79cf0af237149b7679eb6ea566479ca}\label{class_combat_scene_af79cf0af237149b7679eb6ea566479ca}} 
+uint8\+\_\+t {\bfseries alpha\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a9d8dcbdd7bc78e3f5cef5af88a2076aa}\label{class_combat_scene_a9d8dcbdd7bc78e3f5cef5af88a2076aa}} 
+uint8\+\_\+t {\bfseries inc\+\_\+alpha\+\_\+}
+\item 
+\mbox{\Hypertarget{class_combat_scene_a9030bdac091e28f362697da89ba17b25}\label{class_combat_scene_a9030bdac091e28f362697da89ba17b25}} 
+uint8\+\_\+t {\bfseries num\+\_\+range\+\_\+rect\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_combat_scene_a2ac1e8b1d6f77db79510a82b3a1fbd93}\label{class_combat_scene_a2ac1e8b1d6f77db79510a82b3a1fbd93}} 
+\index{CombatScene@{CombatScene}!drawImgui@{drawImgui}}
+\index{drawImgui@{drawImgui}!CombatScene@{CombatScene}}
+\doxysubsubsection{\texorpdfstring{drawImgui()}{drawImgui()}}
+{\footnotesize\ttfamily void Combat\+Scene\+::draw\+Imgui (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+use to draw extra informatio that is not child of entity (Imgui). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rendeder$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_aff2cd67a82745747f3ee9ebde7838c71}{Scene}}.
+
+\mbox{\Hypertarget{class_combat_scene_a8af32d9d1ba09dc64b9b3daad3858c86}\label{class_combat_scene_a8af32d9d1ba09dc64b9b3daad3858c86}} 
+\index{CombatScene@{CombatScene}!input@{input}}
+\index{input@{input}!CombatScene@{CombatScene}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Combat\+Scene\+::input (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{eve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contains the input of each scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & eve. Event of S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}{Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/combatscene.\+h\end{DoxyCompactItemize}

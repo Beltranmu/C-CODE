@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{8733b5e4-22a5-46de-ab3f-5ca0c57bde0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\EDK3">
+      <UniqueIdentifier>{f417cec2-3d7a-42bc-9ca5-31bcb92d44ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\EDK3\dev">
+      <UniqueIdentifier>{e4dc179c-ddff-4e8e-a4c1-b2ab1b2728a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ESAT">
+      <UniqueIdentifier>{85ec947a-471c-448e-9b46-69d7add93aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Example">
+      <UniqueIdentifier>{8c9750f4-0952-4337-a82c-379aca8b4f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Geometry">
+      <UniqueIdentifier>{da61da53-1909-4dc6-aeb3-453eedd0b1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Material">
+      <UniqueIdentifier>{61892f76-34ae-4fbd-98cd-f992c6b5f890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{d9dedf5d-f529-4e1a-b56f-4f94b91adc4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Geomery">
+      <UniqueIdentifier>{62b9e56d-6361-4068-816d-db402a38070a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Material">
+      <UniqueIdentifier>{f5e8c534-f180-4e7e-8c09-6790e2374136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Mollete">
+      <UniqueIdentifier>{30651515-2020-41de-961c-388fba6bb15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Mollete">
+      <UniqueIdentifier>{d00134f2-2015-4acc-b955-2555db413aa7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\EDK3\dev\framebuffer.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\glew.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\gpumanager.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\opengl.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\program.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\shader.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\dev\buffer.h">
+      <Filter>Include\EDK3\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\camera.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\constants.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\drawable.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\geometry.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\matdiffuse.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\matdiffusetexture.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\material.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\materialsettings.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\matpostprocess.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\node.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\ref_ptr.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\referenced.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\rendertarget.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\scoped_array.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\scoped_ptr.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\EDK3\texture.h">
+      <Filter>Include\EDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\sprite.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\time.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\window.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\draw.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\input.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ESAT\math.h">
+      <Filter>Include\ESAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\geometry\sphere.h">
+      <Filter>Include\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\geometry\triangler.h">
+      <Filter>Include\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\material\material2color.h">
+      <Filter>Include\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\geometry\icosaedro.h">
+      <Filter>Include\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\geometry\spherev2.h">
+      <Filter>Include\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\camerafps.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\gpumanager.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\shader.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\buffer.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\program.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\texture.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mollete\camera.h">
+      <Filter>Include\Mollete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\geometry\cube.h">
+      <Filter>Include\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\material\materialcube.h">
+      <Filter>Include\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\material\materialcube1.h">
+      <Filter>Include\Material</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\visual_equalizer_main.cc">
+      <Filter>Example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\geometry\sphere.cc">
+      <Filter>Src\Geomery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\geometry\triangler.cc">
+      <Filter>Src\Geomery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\material\material2color.cc">
+      <Filter>Src\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\geometry\icosaedro.cc">
+      <Filter>Src\Geomery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\geometry\spherev2.cc">
+      <Filter>Src\Geomery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\camerafps.cc">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\gpumanager.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\shader.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\buffer.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\program.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\texture.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mollete\camera.cc">
+      <Filter>Src\Mollete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\geometry\cube.cc">
+      <Filter>Src\Geomery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\material\materialcube.cc">
+      <Filter>Src\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\material\materialcube1.cc">
+      <Filter>Src\Material</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

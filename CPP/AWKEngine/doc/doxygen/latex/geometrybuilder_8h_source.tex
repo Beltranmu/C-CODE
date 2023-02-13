@@ -1,0 +1,42 @@
+\hypertarget{geometrybuilder_8h_source}{}\doxysection{geometrybuilder.\+h}
+\label{geometrybuilder_8h_source}\index{include/geometrybuilder.h@{include/geometrybuilder.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_GEOMETRYBUILDER\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_GEOMETRYBUILDER\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}}\{}
+\DoxyCodeLine{15   \textcolor{keyword}{class }Engine;}
+\DoxyCodeLine{16   \textcolor{keyword}{class }\mbox{\hyperlink{class_a_w_k_1_1_geometry_builder}{GeometryBuilder}}\{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18   \textcolor{keyword}{public}:}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_geometry_builder_1_1_vertex_atrrib}{VertexAtrrib}}\{}
+\DoxyCodeLine{21       \textcolor{keywordtype}{float} x, y, z;}
+\DoxyCodeLine{22       \textcolor{keywordtype}{float} nx, ny, nz;}
+\DoxyCodeLine{23       \textcolor{keywordtype}{float} u, v;}
+\DoxyCodeLine{24     \};}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_a_w_k_1_1_geometry_builder}{GeometryBuilder}}();}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_a_w_k_1_1_geometry_builder}{\string~GeometryBuilder}}();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} n\_vertices;}
+\DoxyCodeLine{28     std::vector<VertexAtrrib> vertices;}
+\DoxyCodeLine{29     std::vector<uint32\_t> id\_vertices;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} addVertex(\mbox{\hyperlink{struct_a_w_k_1_1_geometry_builder_1_1_vertex_atrrib}{VertexAtrrib}}* vertex\_attrib\_info); }
+\DoxyCodeLine{32     uint32\_t createGeometry(\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}\& engine);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keyword}{static} uint32\_t next\_geo\_id;}
+\DoxyCodeLine{35   \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     uint32\_t id\_geo;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38   \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_MAIN\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: El directorio Intermediate no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Intermediate.
+  vector_3.cc
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\project\math_library\math_library\include\math_utils.h(15): warning C4100: 'copy': parámetro formal sin referencia
+  vector_4.cc
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\project\math_library\math_library\include\math_utils.h(15): warning C4100: 'copy': parámetro formal sin referencia
+d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\project\math_library\math_library\include\vector_2.h(112): warning C4239: se ha utilizado una extensión no estándar: 'return': conversión de 'Vector2' a 'Vector2 &'
+  d:\ricardo\segundo\grafica\2pg_ta_beltranmu\edk_workspace_projectmanhattan\project\math_library\math_library\include\vector_2.h(112): note: Una referencia que no es const solamente se puede enlazar a un valor L
+  Generando código...
+  MathLibrary.vcxproj -> D:\ricardo\segundo\grafica\2pg_ta_beltranmu\EDK_workspace_projectmanhattan\project\math_library\project\VS2017\MathLibrary\MathLibrary\..\..\..\bin\MathLibrary_d.lib

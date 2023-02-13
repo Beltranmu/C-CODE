@@ -1,0 +1,7 @@
+build/
+bin/
+!./bin/HelloSound/fmod.dll
+log/*.json
+*.dmg
+*.vs *.sln *.vcxproj
+

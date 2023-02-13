@@ -1,0 +1,99 @@
+\hypertarget{sound__manager_8h_source}{}\doxysection{sound\+\_\+manager.\+h}
+\label{sound__manager_8h_source}\index{include/sound\_manager.h@{include/sound\_manager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_\_SOUND\_MANAGER\_H\_\_}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_\_SOUND\_MANAGER\_H\_\_ 1}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}adt\_vector.h"{}}}
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}}\{}
+\DoxyCodeLine{21   \textcolor{keyword}{class }\mbox{\hyperlink{class_a_w_k_1_1_sound_manager}{SoundManager}}\{}
+\DoxyCodeLine{22   }
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{24       \mbox{\hyperlink{class_a_w_k_1_1_sound_manager}{SoundManager}}();}
+\DoxyCodeLine{25       \mbox{\hyperlink{class_a_w_k_1_1_sound_manager}{\string~SoundManager}}();}
+\DoxyCodeLine{26       int32\_t mode;}
+\DoxyCodeLine{30       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a83b944928ca8647907a9ede17db466fd}{init}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a6e45748a2a83054b4bff43c705120881}{loadSound}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* path);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a5227202c7f3655633399a79e4dca2e62}{play}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a710216c79d722f933398bdf33fd81792}{update}}(\textcolor{keywordtype}{float} time);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_aa2a5d62d8e373b4c47d90bfb7e05cb32}{musicInput}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_afa4a8249dd81a663dd40f29be45fd975}{ResetMode}}(\textcolor{keywordtype}{int} previous\_mode, \textcolor{keywordtype}{int} next\_mode);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{67       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a995641b27625b9f8fb68cac27edebf22}{crossfading}}(int32\_t id\_fade\_in, int32\_t id\_fade\_out, \textcolor{keywordtype}{float} time = 1.0f);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{72       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a02d005d8d57caf5d676b7b323410f3d3}{freeSM}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74       \textcolor{keyword}{struct }Data; }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{79       \textcolor{keyword}{class }\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \{}
+\DoxyCodeLine{80       \textcolor{keyword}{public}:}
+\DoxyCodeLine{81         \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}}() \{}
+\DoxyCodeLine{82           \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_abceec787156dd2f687ac38e795c3c630}{id\_chanel}} = NULL;}
+\DoxyCodeLine{83           \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_ab8954ff410fccebe3f1ea8a169ac7a5e}{state}} = NULL;}
+\DoxyCodeLine{84           \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_a3d13408a4a49ab76755da5ede6206bfb}{n\_layers}} = 0;}
+\DoxyCodeLine{85         \};}
+\DoxyCodeLine{86         \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{\string~Layering}}() \{}
+\DoxyCodeLine{87           \textcolor{keywordflow}{if} (NULL != \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_abceec787156dd2f687ac38e795c3c630}{id\_chanel}}) \{}
+\DoxyCodeLine{88             free(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_abceec787156dd2f687ac38e795c3c630}{id\_chanel}});}
+\DoxyCodeLine{89           \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91           \textcolor{keywordflow}{if} (NULL != \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_ab8954ff410fccebe3f1ea8a169ac7a5e}{state}}) \{}
+\DoxyCodeLine{92             free(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_ab8954ff410fccebe3f1ea8a169ac7a5e}{state}});}
+\DoxyCodeLine{93           \}}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         int32\_t \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_a3d13408a4a49ab76755da5ede6206bfb}{n\_layers}};   }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99         int32\_t* \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_abceec787156dd2f687ac38e795c3c630}{id\_chanel}}; }
+\DoxyCodeLine{100         \textcolor{keywordtype}{bool}* \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_ab8954ff410fccebe3f1ea8a169ac7a5e}{state}};        }
+\DoxyCodeLine{106         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_a419e843cc1727e0b7851cf33cc38f7b5}{init}}(int32\_t \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering_a3d13408a4a49ab76755da5ede6206bfb}{n\_layers}}, int32\_t* id\_sounds);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108       \};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{114       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a2460285783c54e4128c83c5b8e4dd8cb}{playLayer}}(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a49cf671249eb508fcf8a5af8d16c2de4}{activateLayer}}(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\_t id\_chanel);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{128       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_aaff55c4f8a032839c730e72a4191709d}{desactivateLayer}}(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\_t id\_chanel);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{135       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a735c7f6f9068c22997a09de7cb0a1e48}{toggleLayer}}(\mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \&L, int32\_t id\_chanel);}
+\DoxyCodeLine{136       \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a9ab1bebd6a670f117b684b74b34ac5a3}{sound\_id}}[3] = \{ 2,3,4 \};}
+\DoxyCodeLine{137       \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_1_1_layering}{Layering}} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a644626ff2aebe733be56d1c276775742}{layer\_1}};           }
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139       \textcolor{comment}{//Branching}}
+\DoxyCodeLine{140       Vector \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a4711fac2722842320a30f63939aae497}{branching\_1}};                 }
+\DoxyCodeLine{141 }
+\DoxyCodeLine{146       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a422792a39ee9f74ddb860e2af9cdc2e8}{initBranching}}(int32\_t n\_nodes);}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{152       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_ae7e0ec6a0ef79d0b213301f6d2c70137}{playBrach}}(int32\_t starting\_id);}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154      }
+\DoxyCodeLine{155       \textcolor{comment}{//void playTransition(int32\_t starting\_id);}}
+\DoxyCodeLine{161 \textcolor{comment}{}      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a7e9bcf98140c74bb5882a7f131112f81}{changeBrach}}(int32\_t new\_stage, int32\_t transition);}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163       \textcolor{comment}{//Piano}}
+\DoxyCodeLine{169 \textcolor{comment}{}      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_w_k_1_1_sound_manager_a4fb6c9abe0ccabd005e33c27c02418af}{Piano}}(int32\_t note);}
+\DoxyCodeLine{170       }
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174     \textcolor{keyword}{private}:}
+\DoxyCodeLine{175       Data* \_data = \textcolor{keyword}{nullptr};  }
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177   \};}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179 \}}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// !\_\_SOUND\_MANAGER\_H\_\_}}
+
+\end{DoxyCode}

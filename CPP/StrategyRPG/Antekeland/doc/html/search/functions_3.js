@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['iabehaviour_184',['iaBehaviour',['../class_character.html#ae1f3e41c10f7df9f8e192d565efbaa18',1,'Character']]],
+  ['iamov_185',['iaMov',['../class_character.html#a8ff51a6f36382828a25cbd24020dcac3',1,'Character']]],
+  ['init_186',['init',['../class_background.html#a877afe2b3f0571b3c0cc9818ad8235bf',1,'Background::init()'],['../class_character.html#a4db3681a3e3b995a5916830880aca290',1,'Character::init(unsigned char id)'],['../class_character.html#abaade8edbdd882b4a1d41bbf1d4be7a2',1,'Character::init(int prof, unsigned char id)'],['../class_combat_scene.html#ab7fab3320798eabf5eade39fc820148c',1,'CombatScene::init()'],['../class_custo_scene.html#afebe07e06191c425745c6712c90465d4',1,'CustoScene::init()'],['../class_data_base.html#a7562e492c27634a552aa25743669d52b',1,'DataBase::init()'],['../class_entity.html#a0f780f6548750436c017f035eabff2a7',1,'Entity::init()'],['../class_fight_scene.html#a3cacd7bdad53c9656095fd27d28ba787',1,'FightScene::init()'],['../class_game.html#a66bffb23fb564e9bb3067532c6cc8d4e',1,'Game::init()'],['../class_game_manager.html#ae69904a9ea98e5a6f745bb84beb7f507',1,'GameManager::init()'],['../class_label.html#a7cc1efcf72468c7abfbfdf5bfc8f3159',1,'Label::init()'],['../class_logic.html#afaf5406c03dc8def01922b20c1319f84',1,'Logic::init()'],['../class_main_scene.html#a9dbf9fba057e9de1e42b36de139d7286',1,'MainScene::init()'],['../class_menu_scene.html#aacc1d8a869c848f6933a6dae605dc93c',1,'MenuScene::init()'],['../class_rect.html#a2a81dba8844365b99b584f39340d3846',1,'Rect::init()'],['../class_scene.html#a7edd8111e127173d2d06b571a177d7b1',1,'Scene::init()'],['../class_tile.html#aa31042be0ef5b34ed85915758ff386df',1,'Tile::init()']]],
+  ['initcombat_187',['initCombat',['../class_combat.html#a7fc4fa2d7b81f513443a15f405b23e1b',1,'Combat']]],
+  ['initenemy_188',['initEnemy',['../class_character.html#aed925827d3187a356fbf85468f30890f',1,'Character']]],
+  ['initfont_189',['initFont',['../class_label.html#a105af5f3e5e1a8e6ae44139235d9e089',1,'Label']]],
+  ['initlayer1_190',['initLayer1',['../class_board.html#a7450a161177847321d914eeaeef72b7b',1,'Board']]],
+  ['initlayer2_191',['initLayer2',['../class_board.html#a03d1e15c87d9914135bce058605789ed',1,'Board']]],
+  ['initrect_192',['initRect',['../class_label.html#a0e16bb56680fe08014e40bbed13233f5',1,'Label']]],
+  ['initsprite_193',['initSprite',['../class_sprite.html#a679c10f40de5e117cf193fdba66fedff',1,'Sprite']]],
+  ['initsubsprite_194',['initSubSprite',['../class_tile.html#ad61697b43f3c2559e641bce7086f84c6',1,'Tile']]],
+  ['input_195',['input',['../class_combat_scene.html#a8af32d9d1ba09dc64b9b3daad3858c86',1,'CombatScene::input()'],['../class_custo_scene.html#a0fc0ead99789b3d65ea39a457453e06b',1,'CustoScene::input()'],['../class_fight_scene.html#a20cd3b7ee51929107492e4cf7dae6cc5',1,'FightScene::input()'],['../class_game.html#af73d1ead1703c430cf0ad4d40af1d239',1,'Game::input()'],['../class_main_scene.html#ae89913fd101c94f6d0ff93ae4b737688',1,'MainScene::input()'],['../class_menu_scene.html#a2c7cfe997946ed07781cd89c0523f5f9',1,'MenuScene::input()'],['../class_scene.html#a2942f5a3b58dab1da229f87c9dc77f8d',1,'Scene::input()']]],
+  ['instantiate_196',['Instantiate',['../class_game_manager.html#a9a8d038d4fcb5dd01e48ebb4627f7f6a',1,'GameManager']]]
+];

@@ -1,0 +1,119 @@
+\hypertarget{engine_8h_source}{}\doxysection{engine.\+h}
+\label{engine_8h_source}\index{include/engine.h@{include/engine.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef \_\_ENGINE\_H\_\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define \_\_ENGINE\_H\_\_ 1}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <functional>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <material.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <component.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <system.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <transformtree.h>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_a_w_k}{AWK}} \{}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23   \textcolor{keyword}{class }DisplayList;}
+\DoxyCodeLine{24   \textcolor{keyword}{class }Window;}
+\DoxyCodeLine{25   \textcolor{keyword}{struct }ECSData;}
+\DoxyCodeLine{26   \textcolor{keyword}{struct }EntityHandler;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28   \textcolor{keyword}{class }\mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}} \{}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32       \mbox{\hyperlink{class_a_w_k_1_1_engine}{Engine}}();}
+\DoxyCodeLine{33       \mbox{\hyperlink{class_a_w_k_1_1_engine}{\string~Engine}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35  }
+\DoxyCodeLine{36       uint32\_t loadObj(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* path);}
+\DoxyCodeLine{37       uint32\_t createTexture(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* path);}
+\DoxyCodeLine{38       uint32\_t createGeometry(\textcolor{keywordtype}{float}* vertex\_attrib, uint32\_t* vertex\_indices,  uint32\_t size\_geometry);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40       \textcolor{keywordtype}{void} init(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[]); \textcolor{comment}{//Essential for the engine}}
+\DoxyCodeLine{41       \textcolor{keywordtype}{void} initMiniTrace(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* out\_filepath);}
+\DoxyCodeLine{42       \textcolor{keywordtype}{void} initBuffers();}
+\DoxyCodeLine{43       \textcolor{keywordtype}{void} initECS();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{47       uint32\_t \mbox{\hyperlink{class_a_w_k_1_1_engine_a6e8c86112711d11720ffb758e158c22e}{createMaterial}}(\mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_material_parameters}{AWK::Material::MaterialParameters}} newMat);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49       \textcolor{keywordtype}{void} changeMaterialColor(uint32\_t mat, \mbox{\hyperlink{struct_a_w_k_1_1_material_1_1_r_g_b_a}{AWK::Material::RGBA}} color);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{54       uint32\_t \mbox{\hyperlink{class_a_w_k_1_1_engine_a20abafd78c789588f98b37cd93233b85}{createEntity}}(uint64\_t mask = Component::AddComponentType::ADD\_ALL);}
+\DoxyCodeLine{55       \textcolor{keywordtype}{void} enableSystem(SystemType type);}
+\DoxyCodeLine{56       \mbox{\hyperlink{struct_a_w_k_1_1_render_component}{RenderComponent}}* addRenderComponent(EntityHandler* entity);}
+\DoxyCodeLine{57       \mbox{\hyperlink{struct_a_w_k_1_1_render_component}{RenderComponent}}* getRenderComponent(\textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{58       \mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component}{TRSComponent}}* addTRSComponent(EntityHandler* entity);}
+\DoxyCodeLine{59       \mbox{\hyperlink{struct_a_w_k_1_1_t_r_s_component}{TRSComponent}}* getTRSComponent(\textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{60       \mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component}{LocalTransformComponent}}* addLocalTransformComponent(EntityHandler* entity);}
+\DoxyCodeLine{61       \mbox{\hyperlink{struct_a_w_k_1_1_local_transform_component}{LocalTransformComponent}}* getLocalTransformComponent(\textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{62       \mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component}{WorldTransformComponent}}* addWorldTransformComponent(EntityHandler* entity);}
+\DoxyCodeLine{63       \mbox{\hyperlink{struct_a_w_k_1_1_world_transform_component}{WorldTransformComponent}}* getWorldTransformComponent(\textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{64       \mbox{\hyperlink{struct_a_w_k_1_1_node_component}{NodeComponent}}* addNodeComponent(EntityHandler* entity);}
+\DoxyCodeLine{65       \mbox{\hyperlink{struct_a_w_k_1_1_node_component}{NodeComponent}}* getNodeComponent(\textcolor{keyword}{const} uint32\_t entity);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68       \textcolor{keywordtype}{void} addChild(\textcolor{keyword}{const} uint32\_t parentEntity, \textcolor{keyword}{const} uint32\_t childEntity);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71       std::vector<std::unique\_ptr<System>> systems;}
+\DoxyCodeLine{72       \textcolor{comment}{//RenderSystem tmpRenderSystem;}}
+\DoxyCodeLine{73       \mbox{\hyperlink{struct_a_w_k_1_1_transform_tree}{TransformTree}} transformTree;}
+\DoxyCodeLine{74       }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76       }
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78       \textcolor{keywordtype}{double} getTime();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80      }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82      }
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84       \textcolor{comment}{// Render Loop -\/ Gets Logic Function from the outside}}
+\DoxyCodeLine{85       \textcolor{keywordtype}{void} startRenderLoop(std::function<\textcolor{keywordtype}{void}()> \&\&logicFunc);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88       \mbox{\hyperlink{class_a_w_k_1_1_window}{Window}}\& getWindow();}
+\DoxyCodeLine{89       \textcolor{keywordtype}{void} submit(\mbox{\hyperlink{class_a_w_k_1_1_display_list}{DisplayList}}\&\& list);}
+\DoxyCodeLine{90       \textcolor{keywordtype}{void} render();}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92       \textcolor{keywordtype}{void} update();}
+\DoxyCodeLine{93       \textcolor{keywordtype}{void} End();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95       \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_engine_1_1_camara}{Camara}} \{}
+\DoxyCodeLine{96         glm::vec3 position;}
+\DoxyCodeLine{97         glm::vec3 rotation;}
+\DoxyCodeLine{98         \textcolor{keywordtype}{float} znear;}
+\DoxyCodeLine{99         \textcolor{keywordtype}{float} zfar;}
+\DoxyCodeLine{100       \};}
+\DoxyCodeLine{101       \mbox{\hyperlink{struct_a_w_k_1_1_engine_1_1_camara}{Camara}} camera;}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103       \textcolor{keyword}{struct }Data;}
+\DoxyCodeLine{104       \textcolor{keyword}{struct }GPUState;}
+\DoxyCodeLine{105       \textcolor{keyword}{struct }\mbox{\hyperlink{struct_a_w_k_1_1_material}{Material}};}
+\DoxyCodeLine{106       uint32\_t root;}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108       ECSData* \_entityData = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110   \textcolor{keyword}{private}:}
+\DoxyCodeLine{111     Data* \_data = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{112     GPUState* \_GPUState;}
+\DoxyCodeLine{113     \textcolor{keyword}{static} uint32\_t next\_mat\_id;}
+\DoxyCodeLine{114     \textcolor{keyword}{static} uint32\_t next\_texture\_id;}
+\DoxyCodeLine{115   }
+\DoxyCodeLine{116     \textcolor{keywordtype}{bool} entityHasComponent(EntityHandler* entity, \textcolor{keyword}{const} \mbox{\hyperlink{struct_a_w_k_1_1_component_aadd1070cd58caf17b365b20101804b52}{Component::ComponentType}} ct);}
+\DoxyCodeLine{117  }
+\DoxyCodeLine{118   \};}
+\DoxyCodeLine{119 \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_\_ENGINE\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,588 @@
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:15:15
+- Api Type: CUDA RELEASE
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 10.000000 seconds
+- Average time per frame : 18922.962891, microseconds
+- Average time Update Asteroids : 1890.904053, microseconds
+- Average time ForceKernel : 284.213989, microseconds
+- Average time AccelerationKernel : 18.386000, microseconds
+- Average time VelocityKernel : 21.534000, microseconds
+- Average time PositionKernel : 39.222000, microseconds
+
+- Time spent per frame : 9461481.000000, microseconds
+- Time spent Update Asteroids : 945452.000000, microseconds
+- Time spent ForceKernel : 142107.000000, microseconds
+- Time spent AccelerationKernel : 9193.000000, microseconds
+- Time spent VelocityKernel : 10767.000000, microseconds
+- Time spent PositionKernel : 19611.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:23:05
+- Api Type: CUDA DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 32.000000 seconds
+- Average time per frame : 64032.535156, microseconds
+- Average time Update Asteroids : 2042.521973, microseconds
+- Average time ForceKernel : 387.346008, microseconds
+- Average time AccelerationKernel : 20.722000, microseconds
+- Average time VelocityKernel : 22.507999, microseconds
+- Average time PositionKernel : 60.849998, microseconds
+
+- Time spent per frame : 32016268.000000, microseconds
+- Time spent Update Asteroids : 1021261.000000, microseconds
+- Time spent ForceKernel : 193673.000000, microseconds
+- Time spent AccelerationKernel : 10361.000000, microseconds
+- Time spent VelocityKernel : 11254.000000, microseconds
+- Time spent PositionKernel : 30425.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:30:01
+- Api Type: CUDA DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 90661.000000 seconds
+- Average time per frame : 66449.804688, microseconds
+- Average time Update Asteroids : 2098.258057, microseconds
+- Average time ForceKernel : 366.256012, microseconds
+- Average time AccelerationKernel : 19.598000, microseconds
+- Average time VelocityKernel : 20.834000, microseconds
+- Average time PositionKernel : 56.298000, microseconds
+
+- Time spent per frame : 33224904.000000, microseconds
+- Time spent Update Asteroids : 1049129.000000, microseconds
+- Time spent ForceKernel : 183128.000000, microseconds
+- Time spent AccelerationKernel : 9799.000000, microseconds
+- Time spent VelocityKernel : 10417.000000, microseconds
+- Time spent PositionKernel : 28149.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:30:58
+- Api Type: CUDA DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 90719.000000 seconds
+- Average time per frame : 67966.593750, microseconds
+- Average time Update Asteroids : 2131.791992, microseconds
+- Average time ForceKernel : 365.377991, microseconds
+- Average time AccelerationKernel : 19.964001, microseconds
+- Average time VelocityKernel : 21.844000, microseconds
+- Average time PositionKernel : 56.068001, microseconds
+
+- Time spent per frame : 33983296.000000, microseconds
+- Time spent Update Asteroids : 1065896.000000, microseconds
+- Time spent ForceKernel : 182689.000000, microseconds
+- Time spent AccelerationKernel : 9982.000000, microseconds
+- Time spent VelocityKernel : 10922.000000, microseconds
+- Time spent PositionKernel : 28034.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:32:54
+- Api Type: CUDA DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 90834.000000 seconds
+- Average time per frame : 64093.937500, microseconds
+- Average time Update Asteroids : 2027.494019, microseconds
+- Average time ForceKernel : 361.216003, microseconds
+- Average time AccelerationKernel : 20.194000, microseconds
+- Average time VelocityKernel : 21.799999, microseconds
+- Average time PositionKernel : 56.124001, microseconds
+
+- Time spent per frame : 32046968.000000, microseconds
+- Time spent Update Asteroids : 1013747.000000, microseconds
+- Time spent ForceKernel : 180608.000000, microseconds
+- Time spent AccelerationKernel : 10097.000000, microseconds
+- Time spent VelocityKernel : 10900.000000, microseconds
+- Time spent PositionKernel : 28062.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 24/11/2022 || 16:36:53
+- Api Type: CUDA DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 500
+- Total time : 91073.000000 seconds
+- Average time per frame : 64318.929688, microseconds
+- Average time Update Asteroids : 2000.027954, microseconds
+- Average time ForceKernel : 359.955994, microseconds
+- Average time AccelerationKernel : 20.224001, microseconds
+- Average time VelocityKernel : 20.974001, microseconds
+- Average time PositionKernel : 55.445999, microseconds
+
+- Time spent per frame : 32159464.000000, microseconds
+- Time spent Update Asteroids : 1000014.000000, microseconds
+- Time spent ForceKernel : 179978.000000, microseconds
+- Time spent AccelerationKernel : 10112.000000, microseconds
+- Time spent VelocityKernel : 10487.000000, microseconds
+- Time spent PositionKernel : 27723.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 1/12/2022 || 17:42:33
+- Api Type: CUDA RELEASE
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 3.530478 seconds
+- Average time per frame : 35265.781250, microseconds
+- Average time Update Asteroids : 2460.949951, microseconds
+- Average time ForceKernel : 905.190002, microseconds
+- Average time AccelerationKernel : 15.220000, microseconds
+- Average time VelocityKernel : 16.930000, microseconds
+- Average time PositionKernel : 21.200001, microseconds
+
+- Time spent per frame : 3526578.000000, microseconds
+- Time spent Update Asteroids : 246095.000000, microseconds
+- Time spent ForceKernel : 90519.000000, microseconds
+- Time spent AccelerationKernel : 1522.000000, microseconds
+- Time spent VelocityKernel : 1693.000000, microseconds
+- Time spent PositionKernel : 2120.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 3/12/2022 || 19:52:21
+- Api Type: CUDA RELEASE
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 2.064816 seconds
+- Average time per frame : 20617.509766, microseconds
+- Average time Update Asteroids : 1770.790039, microseconds
+- Average time ForceKernel : 95.949997, microseconds
+- Average time AccelerationKernel : 50.540001, microseconds
+- Average time VelocityKernel : 51.130001, microseconds
+- Average time PositionKernel : 49.520000, microseconds
+
+- Time spent per frame : 2061751.000000, microseconds
+- Time spent Update Asteroids : 177079.000000, microseconds
+- Time spent ForceKernel : 9595.000000, microseconds
+- Time spent AccelerationKernel : 5054.000000, microseconds
+- Time spent VelocityKernel : 5113.000000, microseconds
+- Time spent PositionKernel : 4952.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 3/12/2022 || 19:53:15
+- Api Type: OpenCL DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 9.705846 seconds
+- Average time per frame : 97029.601562, microseconds
+- Average time Update Asteroids : 35565.121094, microseconds
+- Average time ForceKernel : 159.029999, microseconds
+- Average time AccelerationKernel : 41.020000, microseconds
+- Average time VelocityKernel : 45.680000, microseconds
+- Average time PositionKernel : 10.090000, microseconds
+
+- Time spent per frame : 9702960.000000, microseconds
+- Time spent Update Asteroids : 3556512.000000, microseconds
+- Time spent ForceKernel : 15903.000000, microseconds
+- Time spent AccelerationKernel : 4102.000000, microseconds
+- Time spent VelocityKernel : 4568.000000, microseconds
+- Time spent PositionKernel : 1009.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 3/12/2022 || 19:54:21
+- Api Type: OpenCL DEBUG
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 9.651684 seconds
+- Average time per frame : 96484.359375, microseconds
+- Average time Update Asteroids : 34543.000000, microseconds
+- Average time ForceKernel : 126.970001, microseconds
+- Average time AccelerationKernel : 40.270000, microseconds
+- Average time VelocityKernel : 40.099998, microseconds
+- Average time PositionKernel : 10.090000, microseconds
+
+- Time spent per frame : 9648436.000000, microseconds
+- Time spent Update Asteroids : 3454300.000000, microseconds
+- Time spent ForceKernel : 12697.000000, microseconds
+- Time spent AccelerationKernel : 4027.000000, microseconds
+- Time spent VelocityKernel : 4010.000000, microseconds
+- Time spent PositionKernel : 1009.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 5/12/2022 || 11:53:15
+- Api Type: OpenCL RELEASE | | x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 5.034377 seconds
+- Average time per frame : 50309.890625, microseconds
+- Average time Update Asteroids : 28673.630859, microseconds
+- Average time ForceKernel : 109.349998, microseconds
+- Average time AccelerationKernel : 31.389999, microseconds
+- Average time VelocityKernel : 34.230000, microseconds
+- Average time PositionKernel : 10.200000, microseconds
+
+- Time spent per frame : 5030989.000000, microseconds
+- Time spent Update Asteroids : 2867363.000000, microseconds
+- Time spent ForceKernel : 10935.000000, microseconds
+- Time spent AccelerationKernel : 3139.000000, microseconds
+- Time spent VelocityKernel : 3423.000000, microseconds
+- Time spent PositionKernel : 1020.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 5/12/2022 || 11:53:41
+- Api Type: OpenCL RELEASE | | x64
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 4.775516 seconds
+- Average time per frame : 47722.199219, microseconds
+- Average time Update Asteroids : 29019.730469, microseconds
+- Average time ForceKernel : 114.470001, microseconds
+- Average time AccelerationKernel : 29.360001, microseconds
+- Average time VelocityKernel : 33.849998, microseconds
+- Average time PositionKernel : 9.670000, microseconds
+
+- Time spent per frame : 4772220.000000, microseconds
+- Time spent Update Asteroids : 2901973.000000, microseconds
+- Time spent ForceKernel : 11447.000000, microseconds
+- Time spent AccelerationKernel : 2936.000000, microseconds
+- Time spent VelocityKernel : 3385.000000, microseconds
+- Time spent PositionKernel : 967.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 13:04:54
+- Api Type: OpenCL DEBUG  || x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 9.015751 seconds
+- Average time per frame : 90126.093750, microseconds
+- Average time Update Asteroids : 30470.759766, microseconds
+- Average time ForceKernel : 157.630005, microseconds
+- Average time AccelerationKernel : 43.220001, microseconds
+- Average time VelocityKernel : 46.740002, microseconds
+- Average time PositionKernel : 11.370000, microseconds
+
+- Time spent per frame : 9012609.000000, microseconds
+- Time spent Update Asteroids : 3047076.000000, microseconds
+- Time spent ForceKernel : 15763.000000, microseconds
+- Time spent AccelerationKernel : 4322.000000, microseconds
+- Time spent VelocityKernel : 4674.000000, microseconds
+- Time spent PositionKernel : 1137.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:16:58
+- Api Type: OpenCL DEBUG  || x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 7.863532 seconds
+- Average time per frame : 78605.453125, microseconds
+- Average time Update Asteroids : 29348.750000, microseconds
+- Average time ForceKernel : 131.130005, microseconds
+- Average time AccelerationKernel : 40.000000, microseconds
+- Average time VelocityKernel : 50.939999, microseconds
+- Average time PositionKernel : 9.960000, microseconds
+
+- Time spent per frame : 7860545.000000, microseconds
+- Time spent Update Asteroids : 2934875.000000, microseconds
+- Time spent ForceKernel : 13113.000000, microseconds
+- Time spent AccelerationKernel : 4000.000000, microseconds
+- Time spent VelocityKernel : 5094.000000, microseconds
+- Time spent PositionKernel : 996.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:21:00
+- Api Type: OpenCL DEBUG  || x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 9.669323 seconds
+- Average time per frame : 96489.898438, microseconds
+- Average time Update Asteroids : 29694.160156, microseconds
+- Average time ForceKernel : 33.380001, microseconds
+- Average time AccelerationKernel : 9.890000, microseconds
+- Average time VelocityKernel : 12.090000, microseconds
+- Average time PositionKernel : 9.750000, microseconds
+
+- Time spent per frame : 9648990.000000, microseconds
+- Time spent Update Asteroids : 2969416.000000, microseconds
+- Time spent ForceKernel : 3338.000000, microseconds
+- Time spent AccelerationKernel : 989.000000, microseconds
+- Time spent VelocityKernel : 1209.000000, microseconds
+- Time spent PositionKernel : 975.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:22:19
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 4.600743 seconds
+- Average time per frame : 45978.339844, microseconds
+- Average time Update Asteroids : 29244.740234, microseconds
+- Average time ForceKernel : 96.550003, microseconds
+- Average time AccelerationKernel : 31.770000, microseconds
+- Average time VelocityKernel : 31.799999, microseconds
+- Average time PositionKernel : 9.040000, microseconds
+
+- Time spent per frame : 4597834.000000, microseconds
+- Time spent Update Asteroids : 2924474.000000, microseconds
+- Time spent ForceKernel : 9655.000000, microseconds
+- Time spent AccelerationKernel : 3177.000000, microseconds
+- Time spent VelocityKernel : 3180.000000, microseconds
+- Time spent PositionKernel : 904.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:22:29
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 60
+- Total time : 3.185366 seconds
+- Average time per frame : 52967.000000, microseconds
+- Average time Update Asteroids : 27598.449219, microseconds
+- Average time ForceKernel : 30.583334, microseconds
+- Average time AccelerationKernel : 9.533334, microseconds
+- Average time VelocityKernel : 11.783334, microseconds
+- Average time PositionKernel : 8.833333, microseconds
+
+- Time spent per frame : 3178020.000000, microseconds
+- Time spent Update Asteroids : 1655907.000000, microseconds
+- Time spent ForceKernel : 1835.000000, microseconds
+- Time spent AccelerationKernel : 572.000000, microseconds
+- Time spent VelocityKernel : 707.000000, microseconds
+- Time spent PositionKernel : 530.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:22:36
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 60
+- Total time : 3.439319 seconds
+- Average time per frame : 57198.500000, microseconds
+- Average time Update Asteroids : 27691.517578, microseconds
+- Average time ForceKernel : 31.216667, microseconds
+- Average time AccelerationKernel : 9.616667, microseconds
+- Average time VelocityKernel : 11.200000, microseconds
+- Average time PositionKernel : 9.633333, microseconds
+
+- Time spent per frame : 3431910.000000, microseconds
+- Time spent Update Asteroids : 1661491.000000, microseconds
+- Time spent ForceKernel : 1873.000000, microseconds
+- Time spent AccelerationKernel : 577.000000, microseconds
+- Time spent VelocityKernel : 672.000000, microseconds
+- Time spent PositionKernel : 578.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:22:47
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 60
+- Total time : 3.446262 seconds
+- Average time per frame : 57314.449219, microseconds
+- Average time Update Asteroids : 27806.916016, microseconds
+- Average time ForceKernel : 31.000000, microseconds
+- Average time AccelerationKernel : 9.700000, microseconds
+- Average time VelocityKernel : 11.066667, microseconds
+- Average time PositionKernel : 9.366667, microseconds
+
+- Time spent per frame : 3438867.000000, microseconds
+- Time spent Update Asteroids : 1668415.000000, microseconds
+- Time spent ForceKernel : 1860.000000, microseconds
+- Time spent AccelerationKernel : 582.000000, microseconds
+- Time spent VelocityKernel : 664.000000, microseconds
+- Time spent PositionKernel : 562.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:22:55
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 60
+- Total time : 3.205428 seconds
+- Average time per frame : 53297.750000, microseconds
+- Average time Update Asteroids : 27671.500000, microseconds
+- Average time ForceKernel : 31.549999, microseconds
+- Average time AccelerationKernel : 9.750000, microseconds
+- Average time VelocityKernel : 11.250000, microseconds
+- Average time PositionKernel : 9.166667, microseconds
+
+- Time spent per frame : 3197865.000000, microseconds
+- Time spent Update Asteroids : 1660290.000000, microseconds
+- Time spent ForceKernel : 1893.000000, microseconds
+- Time spent AccelerationKernel : 585.000000, microseconds
+- Time spent VelocityKernel : 675.000000, microseconds
+- Time spent PositionKernel : 550.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:23:01
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 60
+- Total time : 3.206363 seconds
+- Average time per frame : 53322.851562, microseconds
+- Average time Update Asteroids : 27575.783203, microseconds
+- Average time ForceKernel : 31.833334, microseconds
+- Average time AccelerationKernel : 10.366667, microseconds
+- Average time VelocityKernel : 11.366667, microseconds
+- Average time PositionKernel : 9.150000, microseconds
+
+- Time spent per frame : 3199371.000000, microseconds
+- Time spent Update Asteroids : 1654547.000000, microseconds
+- Time spent ForceKernel : 1910.000000, microseconds
+- Time spent AccelerationKernel : 622.000000, microseconds
+- Time spent VelocityKernel : 682.000000, microseconds
+- Time spent PositionKernel : 549.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:23:16
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 120000
+- Number Repetitions (Frames) : 30
+- Total time : 5.517388 seconds
+- Average time per frame : 183821.296875, microseconds
+- Average time Update Asteroids : 35887.765625, microseconds
+- Average time ForceKernel : 32.000000, microseconds
+- Average time AccelerationKernel : 10.133333, microseconds
+- Average time VelocityKernel : 11.266666, microseconds
+- Average time PositionKernel : 10.733334, microseconds
+
+- Time spent per frame : 5514639.000000, microseconds
+- Time spent Update Asteroids : 1076633.000000, microseconds
+- Time spent ForceKernel : 960.000000, microseconds
+- Time spent AccelerationKernel : 304.000000, microseconds
+- Time spent VelocityKernel : 338.000000, microseconds
+- Time spent PositionKernel : 322.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:31:10
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 10000
+- Number Repetitions (Frames) : 100
+- Total time : 4.747142 seconds
+- Average time per frame : 47444.128906, microseconds
+- Average time Update Asteroids : 30264.990234, microseconds
+- Average time ForceKernel : 102.029999, microseconds
+- Average time AccelerationKernel : 31.010000, microseconds
+- Average time VelocityKernel : 35.169998, microseconds
+- Average time PositionKernel : 9.010000, microseconds
+
+- Time spent per frame : 4744413.000000, microseconds
+- Time spent Update Asteroids : 3026499.000000, microseconds
+- Time spent ForceKernel : 10203.000000, microseconds
+- Time spent AccelerationKernel : 3101.000000, microseconds
+- Time spent VelocityKernel : 3517.000000, microseconds
+- Time spent PositionKernel : 901.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:31:22
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 20000
+- Number Repetitions (Frames) : 100
+- Total time : 5.900472 seconds
+- Average time per frame : 58952.070312, microseconds
+- Average time Update Asteroids : 28672.650391, microseconds
+- Average time ForceKernel : 30.620001, microseconds
+- Average time AccelerationKernel : 9.520000, microseconds
+- Average time VelocityKernel : 11.390000, microseconds
+- Average time PositionKernel : 9.140000, microseconds
+
+- Time spent per frame : 5895207.000000, microseconds
+- Time spent Update Asteroids : 2867265.000000, microseconds
+- Time spent ForceKernel : 3062.000000, microseconds
+- Time spent AccelerationKernel : 952.000000, microseconds
+- Time spent VelocityKernel : 1139.000000, microseconds
+- Time spent PositionKernel : 914.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:31:36
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 80000
+- Number Repetitions (Frames) : 40
+- Total time : 5.142739 seconds
+- Average time per frame : 128360.125000, microseconds
+- Average time Update Asteroids : 31981.474609, microseconds
+- Average time ForceKernel : 31.000000, microseconds
+- Average time AccelerationKernel : 9.575000, microseconds
+- Average time VelocityKernel : 11.350000, microseconds
+- Average time PositionKernel : 9.450000, microseconds
+
+- Time spent per frame : 5134405.000000, microseconds
+- Time spent Update Asteroids : 1279259.000000, microseconds
+- Time spent ForceKernel : 1240.000000, microseconds
+- Time spent AccelerationKernel : 383.000000, microseconds
+- Time spent VelocityKernel : 454.000000, microseconds
+- Time spent PositionKernel : 378.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:31:45
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 80000
+- Number Repetitions (Frames) : 40
+- Total time : 5.055494 seconds
+- Average time per frame : 126172.601562, microseconds
+- Average time Update Asteroids : 31575.300781, microseconds
+- Average time ForceKernel : 30.525000, microseconds
+- Average time AccelerationKernel : 9.400000, microseconds
+- Average time VelocityKernel : 11.275000, microseconds
+- Average time PositionKernel : 9.050000, microseconds
+
+- Time spent per frame : 5046904.000000, microseconds
+- Time spent Update Asteroids : 1263012.000000, microseconds
+- Time spent ForceKernel : 1221.000000, microseconds
+- Time spent AccelerationKernel : 376.000000, microseconds
+- Time spent VelocityKernel : 451.000000, microseconds
+- Time spent PositionKernel : 362.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:31:54
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 80000
+- Number Repetitions (Frames) : 40
+- Total time : 5.065875 seconds
+- Average time per frame : 126573.296875, microseconds
+- Average time Update Asteroids : 31650.750000, microseconds
+- Average time ForceKernel : 31.075001, microseconds
+- Average time AccelerationKernel : 9.750000, microseconds
+- Average time VelocityKernel : 11.950000, microseconds
+- Average time PositionKernel : 9.400000, microseconds
+
+- Time spent per frame : 5062932.000000, microseconds
+- Time spent Update Asteroids : 1266030.000000, microseconds
+- Time spent ForceKernel : 1243.000000, microseconds
+- Time spent AccelerationKernel : 390.000000, microseconds
+- Time spent VelocityKernel : 478.000000, microseconds
+- Time spent PositionKernel : 376.000000, microseconds
+
+______________RESULTS_____________
+
+- Date: 30/1/2023 || 16:32:12
+- Api Type: OpenCL RELEASE  || x86
+- Number of Asteroids : 130000
+- Number Repetitions (Frames) : 40
+- Total time : 8.130480 seconds
+- Average time per frame : 203184.078125, microseconds
+- Average time Update Asteroids : 38642.273438, microseconds
+- Average time ForceKernel : 31.025000, microseconds
+- Average time AccelerationKernel : 9.650000, microseconds
+- Average time VelocityKernel : 11.250000, microseconds
+- Average time PositionKernel : 9.375000, microseconds
+
+- Time spent per frame : 8127363.000000, microseconds
+- Time spent Update Asteroids : 1545691.000000, microseconds
+- Time spent ForceKernel : 1241.000000, microseconds
+- Time spent AccelerationKernel : 386.000000, microseconds
+- Time spent VelocityKernel : 450.000000, microseconds
+- Time spent PositionKernel : 375.000000, microseconds
+

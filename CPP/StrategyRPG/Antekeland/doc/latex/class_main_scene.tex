@@ -1,0 +1,79 @@
+\hypertarget{class_main_scene}{}\doxysection{Main\+Scene Class Reference}
+\label{class_main_scene}\index{MainScene@{MainScene}}
+Inheritance diagram for Main\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_scene_a9dbf9fba057e9de1e42b36de139d7286}\label{class_main_scene_a9dbf9fba057e9de1e42b36de139d7286}} 
+void \mbox{\hyperlink{class_main_scene_a9dbf9fba057e9de1e42b36de139d7286}{init}} () override
+\begin{DoxyCompactList}\small\item\em init the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_scene_ae89913fd101c94f6d0ff93ae4b737688}{input}} (S\+D\+L\+\_\+\+Event $\ast$eve) override
+\begin{DoxyCompactList}\small\item\em Contains the input of each scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_scene_a17d18e1ea8577b48d04aeb35bb4f40b4}\label{class_main_scene_a17d18e1ea8577b48d04aeb35bb4f40b4}} 
+void \mbox{\hyperlink{class_main_scene_a17d18e1ea8577b48d04aeb35bb4f40b4}{update}} () override
+\begin{DoxyCompactList}\small\item\em Contains the update fuctions of each scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_scene_a553d714f76ca045bc3c84cf5c207c566}{draw\+Imgui}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em use to draw extra informatio that is not child of entity (Imgui). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_scene_ab0fb78a792268802694f22f6eebbde13}\label{class_main_scene_ab0fb78a792268802694f22f6eebbde13}} 
+void \mbox{\hyperlink{class_main_scene_ab0fb78a792268802694f22f6eebbde13}{quit}} () override
+\begin{DoxyCompactList}\small\item\em Contains the functions that has to be done before leave that scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_scene_ab389990dc9f8f1523bbef1e11d551679}\label{class_main_scene_ab389990dc9f8f1523bbef1e11d551679}} 
+\mbox{\hyperlink{class_rect}{Rect}} {\bfseries mainscene\+\_\+button\+\_\+} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{class_main_scene_a917a82c79350d0dbecbd1b0e9f7894a6}\label{class_main_scene_a917a82c79350d0dbecbd1b0e9f7894a6}} 
+\mbox{\hyperlink{class_label}{Label}} {\bfseries mainscene\+\_\+text\+\_\+} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_scene_a553d714f76ca045bc3c84cf5c207c566}\label{class_main_scene_a553d714f76ca045bc3c84cf5c207c566}} 
+\index{MainScene@{MainScene}!drawImgui@{drawImgui}}
+\index{drawImgui@{drawImgui}!MainScene@{MainScene}}
+\doxysubsubsection{\texorpdfstring{drawImgui()}{drawImgui()}}
+{\footnotesize\ttfamily void Main\+Scene\+::draw\+Imgui (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+use to draw extra informatio that is not child of entity (Imgui). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Rendeder$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_aff2cd67a82745747f3ee9ebde7838c71}{Scene}}.
+
+\mbox{\Hypertarget{class_main_scene_ae89913fd101c94f6d0ff93ae4b737688}\label{class_main_scene_ae89913fd101c94f6d0ff93ae4b737688}} 
+\index{MainScene@{MainScene}!input@{input}}
+\index{input@{input}!MainScene@{MainScene}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Main\+Scene\+::input (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{eve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contains the input of each scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & eve. Event of S\+DL \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a2942f5a3b58dab1da229f87c9dc77f8d}{Scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mainscene.\+h\end{DoxyCompactItemize}

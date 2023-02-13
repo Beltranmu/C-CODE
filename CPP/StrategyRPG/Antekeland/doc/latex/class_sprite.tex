@@ -1,0 +1,102 @@
+\hypertarget{class_sprite}{}\doxysection{Sprite Class Reference}
+\label{class_sprite}\index{Sprite@{Sprite}}
+Inheritance diagram for Sprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sprite}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sprite_a679c10f40de5e117cf193fdba66fedff}{init\+Sprite}} (\mbox{\hyperlink{class_texture}{Texture}} \&t, const S\+D\+L\+\_\+\+Rect $\ast$position, const S\+D\+L\+\_\+\+Rect $\ast$snip)
+\begin{DoxyCompactList}\small\item\em init a sprite wit a texture and position an snip \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_a8e7f9b460ba649ce58588e72e138d88d}\label{class_sprite_a8e7f9b460ba649ce58588e72e138d88d}} 
+int {\bfseries width} ()
+\item 
+\mbox{\Hypertarget{class_sprite_a0d7fc412cbde8b8cbc6493f2cdd76ab5}\label{class_sprite_a0d7fc412cbde8b8cbc6493f2cdd76ab5}} 
+int {\bfseries height} ()
+\item 
+void \mbox{\hyperlink{class_sprite_a54db855894d8701de498efb15d861726}{set\+\_\+texture}} (const \mbox{\hyperlink{class_texture}{Texture}} \&tex)
+\begin{DoxyCompactList}\small\item\em init a sprite wit a texture and position an snip \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_a2ae3f2898a70b8c0749d67f99f13a15d}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em draw the sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_ae4beba2cfd9b4bf0ed8645c4a129a9f1}\label{class_sprite_ae4beba2cfd9b4bf0ed8645c4a129a9f1}} 
+S\+D\+L\+\_\+\+Rect {\bfseries snip\+\_\+rect\+\_\+}
+\item 
+\mbox{\Hypertarget{class_sprite_aea5bcaeb26474429404c4f0e3dc6682e}\label{class_sprite_aea5bcaeb26474429404c4f0e3dc6682e}} 
+\mbox{\hyperlink{class_texture}{Texture}} $\ast$ {\bfseries texture\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_a2ae3f2898a70b8c0749d67f99f13a15d}\label{class_sprite_a2ae3f2898a70b8c0749d67f99f13a15d}} 
+\index{Sprite@{Sprite}!draw@{draw}}
+\index{draw@{draw}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Sprite\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ren, S\+DL rendeder \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_entity_a8960e2678dfcdeb720f08103bff49e07}{Entity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_tile_aa9ccbf99dee5520d9c723307fd6a4f24}{Tile}}.
+
+\mbox{\Hypertarget{class_sprite_a679c10f40de5e117cf193fdba66fedff}\label{class_sprite_a679c10f40de5e117cf193fdba66fedff}} 
+\index{Sprite@{Sprite}!initSprite@{initSprite}}
+\index{initSprite@{initSprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{initSprite()}{initSprite()}}
+{\footnotesize\ttfamily void Sprite\+::init\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture}{Texture}} \&}]{t,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{position,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{snip }\end{DoxyParamCaption})}
+
+
+
+init a sprite wit a texture and position an snip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Texture\&} & t, texture for the sprite \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ position. where do you want to draw it \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ snip. Snips the sprite off the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_a54db855894d8701de498efb15d861726}\label{class_sprite_a54db855894d8701de498efb15d861726}} 
+\index{Sprite@{Sprite}!set\_texture@{set\_texture}}
+\index{set\_texture@{set\_texture}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{set\_texture()}{set\_texture()}}
+{\footnotesize\ttfamily void Sprite\+::set\+\_\+texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture}{Texture}} \&}]{tex }\end{DoxyParamCaption})}
+
+
+
+init a sprite wit a texture and position an snip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Texture\&} & t texture for the sprite \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ position where do you want to draw it \\
+\hline
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ snip the snip fo the sprite \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/sprite.\+h\end{DoxyCompactItemize}

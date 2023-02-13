@@ -1,0 +1,331 @@
+\hypertarget{class_character}{}\doxysection{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_character}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_character_a4db3681a3e3b995a5916830880aca290}{init}} (unsigned char id)
+\begin{DoxyCompactList}\small\item\em init a character \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_abaade8edbdd882b4a1d41bbf1d4be7a2}{init}} (int prof, unsigned char id)
+\begin{DoxyCompactList}\small\item\em init a character with professiona and a id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_aed925827d3187a356fbf85468f30890f}{init\+Enemy}} (const int lvl, const int id)
+\begin{DoxyCompactList}\small\item\em init a enemy with professiona and a id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a28474345099170632b7aed48e3f0b065}{cpy\+Character}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\begin{DoxyCompactList}\small\item\em Copy the visual information of a character. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a59e5f5c8bdcdaa670717a82214e3eb08}\label{class_character_a59e5f5c8bdcdaa670717a82214e3eb08}} 
+void \mbox{\hyperlink{class_character_a59e5f5c8bdcdaa670717a82214e3eb08}{update\+SpriteC}} ()
+\begin{DoxyCompactList}\small\item\em Update the sprite of the character to face it at the direction of your movement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a3dd2016c7cc10a9b24e90426ff3bad3e}\label{class_character_a3dd2016c7cc10a9b24e90426ff3bad3e}} 
+void \mbox{\hyperlink{class_character_a3dd2016c7cc10a9b24e90426ff3bad3e}{end\+Tile}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the best movement for the enemies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a8ff51a6f36382828a25cbd24020dcac3}\label{class_character_a8ff51a6f36382828a25cbd24020dcac3}} 
+void \mbox{\hyperlink{class_character_a8ff51a6f36382828a25cbd24020dcac3}{ia\+Mov}} ()
+\begin{DoxyCompactList}\small\item\em Mov the ia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_ae1f3e41c10f7df9f8e192d565efbaa18}\label{class_character_ae1f3e41c10f7df9f8e192d565efbaa18}} 
+void \mbox{\hyperlink{class_character_ae1f3e41c10f7df9f8e192d565efbaa18}{ia\+Behaviour}} ()
+\begin{DoxyCompactList}\small\item\em Cotains all the IA behaviour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a2070c6af7c32358fc90b618e8d37396d}\label{class_character_a2070c6af7c32358fc90b618e8d37396d}} 
+void \mbox{\hyperlink{class_character_a2070c6af7c32358fc90b618e8d37396d}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset the variables of the character once a round is comlpeted \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_aaaffb44b62eb70df0e545700c6011210}\label{class_character_aaaffb44b62eb70df0e545700c6011210}} 
+void {\bfseries level\+Up} ()
+\item 
+int32\+\_\+t \mbox{\hyperlink{class_character_a4b08591abef9edbdc2e813efe2078964}{mh\+Distance}} (const S\+D\+L\+\_\+\+Rect $\ast$tr\+\_\+rect)
+\begin{DoxyCompactList}\small\item\em Calculate the manhantan distance between you and a target. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{class_character_a1e715a6f2ceebfa3fbc01563920f81e6}{mh\+Distance\+V2}} (const S\+D\+L\+\_\+\+Rect $\ast$tr\+\_\+rect)
+\begin{DoxyCompactList}\small\item\em Calculate the radius distance between you and a target. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_character_a575ea24dd06caa7dac76b72db4e7aa2b}{Check\+Before\+Move}} (const int next\+\_\+pos\+\_\+x, const int next\+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Check if I can mov to this position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_character_a51fea522fa662a49b454dd2f6b3d9997}{Check\+Previous\+Movs}} (const int next\+\_\+pos\+\_\+x, const int next\+\_\+pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Check if your next position is once that you have already visited. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_aedc4319919ddbdc7e9d6ec3f1c07b7af}{mov\+Character}} (S\+D\+L\+\_\+\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Move the character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a1ce9beae7838db5027c11d66c7f53295}{mov\+Character\+Combat}} (S\+D\+L\+\_\+\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Move the character while you are in combat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a48524a15681e571662ca03132975aa1f}{take\+Damage}} (\mbox{\hyperlink{class_character}{Character}} $\ast$c, const uint8\+\_\+t range)
+\begin{DoxyCompactList}\small\item\em Reciebe damage from other. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a825973a271107995b920d466f3b3305a}{draw}} (S\+D\+L\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em draw the character \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_character_a17a9daa9c8559b9169684321114f33e9}\label{class_character_a17a9daa9c8559b9169684321114f33e9}} 
+char {\bfseries name\+\_\+} \mbox{[}32\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{class_character_a1ee9f114180cf28898810860fead452e}\label{class_character_a1ee9f114180cf28898810860fead452e}} 
+char {\bfseries name2\+\_\+} \mbox{[}32\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{class_character_a402a3de600bff4129a4d6583086152db}\label{class_character_a402a3de600bff4129a4d6583086152db}} 
+\mbox{\hyperlink{struct_attacks_data}{Attacks\+Data}} {\bfseries char\+\_\+attacks\+\_\+} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_character_a33ee48c01a6fb97563c39d72e50b50f8}\label{class_character_a33ee48c01a6fb97563c39d72e50b50f8}} 
+uint8\+\_\+t {\bfseries current\+\_\+att\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a6605714515a39c6659bf8ce05185a549}\label{class_character_a6605714515a39c6659bf8ce05185a549}} 
+\mbox{\hyperlink{struct_character___stats}{Character\+\_\+\+Stats}} {\bfseries base\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a593fde3783ad8ac75a2bbe2724c02d39}\label{class_character_a593fde3783ad8ac75a2bbe2724c02d39}} 
+\mbox{\hyperlink{struct_character___stats}{Character\+\_\+\+Stats}} {\bfseries current\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a0f4ce95e11a6dca056d2a606524b072c}\label{class_character_a0f4ce95e11a6dca056d2a606524b072c}} 
+unsigned char {\bfseries char\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a283a65a172217d7920d4f2d9dc34df62}\label{class_character_a283a65a172217d7920d4f2d9dc34df62}} 
+int32\+\_\+t {\bfseries profession\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_abfd813c3ee4e04364b377b2501bc817c}\label{class_character_abfd813c3ee4e04364b377b2501bc817c}} 
+int32\+\_\+t {\bfseries xp\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a858e8696de931a3e454e8360e12b7829}\label{class_character_a858e8696de931a3e454e8360e12b7829}} 
+int32\+\_\+t {\bfseries level\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a36294e569c93b63f368050686c620c5e}\label{class_character_a36294e569c93b63f368050686c620c5e}} 
+int32\+\_\+t {\bfseries direction\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_ae336a8db84eca661a0e2e204c03a0eef}\label{class_character_ae336a8db84eca661a0e2e204c03a0eef}} 
+int32\+\_\+t {\bfseries previous\+\_\+movs\+\_\+} \mbox{[}11\mbox{]}
+\item 
+\mbox{\Hypertarget{class_character_ae8356afa5d63598204de01750701882e}\label{class_character_ae8356afa5d63598204de01750701882e}} 
+int32\+\_\+t {\bfseries index\+\_\+mov\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_ac0552c72bdfd09f9d82e6ec57503fb19}\label{class_character_ac0552c72bdfd09f9d82e6ec57503fb19}} 
+S\+D\+L\+\_\+\+Rect {\bfseries end\+\_\+tile\+\_\+mov\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_aba3e73cdef5f67f70c3810ac08fa2ffb}\label{class_character_aba3e73cdef5f67f70c3810ac08fa2ffb}} 
+int32\+\_\+t {\bfseries cont\+\_\+mov\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a9e24f51b1c3dee15c31cc5c28aa9ab0b}\label{class_character_a9e24f51b1c3dee15c31cc5c28aa9ab0b}} 
+\mbox{\hyperlink{struct_skins_customization}{Skins\+Customization}} {\bfseries skin\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a181b6b1989a0743395a71d8c0beb773d}\label{class_character_a181b6b1989a0743395a71d8c0beb773d}} 
+\mbox{\hyperlink{class_sprite}{Sprite}} {\bfseries skin\+\_\+} \mbox{[}7\mbox{]}
+\item 
+\mbox{\Hypertarget{class_character_acee14f61bb5d00d2df0ec316c03b051c}\label{class_character_acee14f61bb5d00d2df0ec316c03b051c}} 
+\mbox{\hyperlink{class_sprite}{Sprite}} {\bfseries outfit\+\_\+} \mbox{[}10\mbox{]}
+\item 
+\mbox{\Hypertarget{class_character_a8ccd0c4ea1f8c44e8c9936abb764450c}\label{class_character_a8ccd0c4ea1f8c44e8c9936abb764450c}} 
+unsigned char {\bfseries generate\+\_\+mov\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_a1e912c71d5c39e10fd0670082222e456}\label{class_character_a1e912c71d5c39e10fd0670082222e456}} 
+unsigned char {\bfseries turn\+\_\+completed\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_ae61a6f227a9bea13d587986d0f97f95f}\label{class_character_ae61a6f227a9bea13d587986d0f97f95f}} 
+unsigned char {\bfseries player\+\_\+attacking\+\_\+}
+\item 
+\mbox{\Hypertarget{class_character_ac9cb2cd001b31c5e7a5ee4d511ad77a1}\label{class_character_ac9cb2cd001b31c5e7a5ee4d511ad77a1}} 
+unsigned char {\bfseries attack\+\_\+chosen\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_character_a575ea24dd06caa7dac76b72db4e7aa2b}\label{class_character_a575ea24dd06caa7dac76b72db4e7aa2b}} 
+\index{Character@{Character}!CheckBeforeMove@{CheckBeforeMove}}
+\index{CheckBeforeMove@{CheckBeforeMove}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{CheckBeforeMove()}{CheckBeforeMove()}}
+{\footnotesize\ttfamily bool Character\+::\+Check\+Before\+Move (\begin{DoxyParamCaption}\item[{const int}]{next\+\_\+pos\+\_\+x,  }\item[{const int}]{next\+\_\+pos\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Check if I can mov to this position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int next\+\_\+pos\+\_\+x the x coord of the position \\
+\hline
+{\em const} & int next\+\_\+pos\+\_\+y the y coord of the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if you can move otherwise you can\textquotesingle{}t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_character_a51fea522fa662a49b454dd2f6b3d9997}\label{class_character_a51fea522fa662a49b454dd2f6b3d9997}} 
+\index{Character@{Character}!CheckPreviousMovs@{CheckPreviousMovs}}
+\index{CheckPreviousMovs@{CheckPreviousMovs}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{CheckPreviousMovs()}{CheckPreviousMovs()}}
+{\footnotesize\ttfamily bool Character\+::\+Check\+Previous\+Movs (\begin{DoxyParamCaption}\item[{const int}]{next\+\_\+pos\+\_\+x,  }\item[{const int}]{next\+\_\+pos\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Check if your next position is once that you have already visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int next\+\_\+pos\+\_\+x the x coord of the position \\
+\hline
+{\em const} & int next\+\_\+pos\+\_\+y the y coord of the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if you can move otherwise you can\textquotesingle{}t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_character_a28474345099170632b7aed48e3f0b065}\label{class_character_a28474345099170632b7aed48e3f0b065}} 
+\index{Character@{Character}!cpyCharacter@{cpyCharacter}}
+\index{cpyCharacter@{cpyCharacter}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{cpyCharacter()}{cpyCharacter()}}
+{\footnotesize\ttfamily void Character\+::cpy\+Character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Copy the visual information of a character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Character\&} & c. The character that you want to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a825973a271107995b920d466f3b3305a}\label{class_character_a825973a271107995b920d466f3b3305a}} 
+\index{Character@{Character}!draw@{draw}}
+\index{draw@{draw}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Character\+::draw (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw the character 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Renderer$\ast$} & ren. S\+DL renderer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_entity_a8960e2678dfcdeb720f08103bff49e07}{Entity}}.
+
+\mbox{\Hypertarget{class_character_abaade8edbdd882b4a1d41bbf1d4be7a2}\label{class_character_abaade8edbdd882b4a1d41bbf1d4be7a2}} 
+\index{Character@{Character}!init@{init}}
+\index{init@{init}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Character\+::init (\begin{DoxyParamCaption}\item[{int}]{prof,  }\item[{unsigned char}]{id }\end{DoxyParamCaption})}
+
+
+
+init a character with professiona and a id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & prof, the id of the profession \\
+\hline
+{\em unsigned} & char id. the id of the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a4db3681a3e3b995a5916830880aca290}\label{class_character_a4db3681a3e3b995a5916830880aca290}} 
+\index{Character@{Character}!init@{init}}
+\index{init@{init}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Character\+::init (\begin{DoxyParamCaption}\item[{unsigned char}]{id }\end{DoxyParamCaption})}
+
+
+
+init a character 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char id. id of the new character. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_aed925827d3187a356fbf85468f30890f}\label{class_character_aed925827d3187a356fbf85468f30890f}} 
+\index{Character@{Character}!initEnemy@{initEnemy}}
+\index{initEnemy@{initEnemy}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{initEnemy()}{initEnemy()}}
+{\footnotesize\ttfamily void Character\+::init\+Enemy (\begin{DoxyParamCaption}\item[{const int}]{lvl,  }\item[{const int}]{id }\end{DoxyParamCaption})}
+
+
+
+init a enemy with professiona and a id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & prof, the id of the profession \\
+\hline
+{\em unsigned} & char id. the id of the character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a4b08591abef9edbdc2e813efe2078964}\label{class_character_a4b08591abef9edbdc2e813efe2078964}} 
+\index{Character@{Character}!mhDistance@{mhDistance}}
+\index{mhDistance@{mhDistance}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{mhDistance()}{mhDistance()}}
+{\footnotesize\ttfamily int32\+\_\+t Character\+::mh\+Distance (\begin{DoxyParamCaption}\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{tr\+\_\+rect }\end{DoxyParamCaption})}
+
+
+
+Calculate the manhantan distance between you and a target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ tr\+\_\+rect the target. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a1e715a6f2ceebfa3fbc01563920f81e6}\label{class_character_a1e715a6f2ceebfa3fbc01563920f81e6}} 
+\index{Character@{Character}!mhDistanceV2@{mhDistanceV2}}
+\index{mhDistanceV2@{mhDistanceV2}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{mhDistanceV2()}{mhDistanceV2()}}
+{\footnotesize\ttfamily int32\+\_\+t Character\+::mh\+Distance\+V2 (\begin{DoxyParamCaption}\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{tr\+\_\+rect }\end{DoxyParamCaption})}
+
+
+
+Calculate the radius distance between you and a target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+D\+L\+\_\+\+Rect$\ast$ tr\+\_\+rect the target. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_aedc4319919ddbdc7e9d6ec3f1c07b7af}\label{class_character_aedc4319919ddbdc7e9d6ec3f1c07b7af}} 
+\index{Character@{Character}!movCharacter@{movCharacter}}
+\index{movCharacter@{movCharacter}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{movCharacter()}{movCharacter()}}
+{\footnotesize\ttfamily void Character\+::mov\+Character (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Move the character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & e. S\+DL event to get the input. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a1ce9beae7838db5027c11d66c7f53295}\label{class_character_a1ce9beae7838db5027c11d66c7f53295}} 
+\index{Character@{Character}!movCharacterCombat@{movCharacterCombat}}
+\index{movCharacterCombat@{movCharacterCombat}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{movCharacterCombat()}{movCharacterCombat()}}
+{\footnotesize\ttfamily void Character\+::mov\+Character\+Combat (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Move the character while you are in combat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Event$\ast$} & e. S\+DL event to get the input. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a48524a15681e571662ca03132975aa1f}\label{class_character_a48524a15681e571662ca03132975aa1f}} 
+\index{Character@{Character}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Character\+::take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} $\ast$}]{c,  }\item[{const uint8\+\_\+t}]{range }\end{DoxyParamCaption})}
+
+
+
+Reciebe damage from other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_character}{Character}}} & c. The one that deal you dmg. \\
+\hline
+{\em const} & uint8\+\_\+t range. the range of it attack \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/character.\+h\end{DoxyCompactItemize}
