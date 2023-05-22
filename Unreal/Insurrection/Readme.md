@@ -2,7 +2,7 @@
 
 Game made in less than one year by 1 designer, 5 artits and 4 programmers.
 
-[# Video of the game] (https://www.youtube.com/watch?v=LlmQj7hpYkc)
+# [Video of the game](https://www.youtube.com/watch?v=LlmQj7hpYkc)
 
 # Information
 
